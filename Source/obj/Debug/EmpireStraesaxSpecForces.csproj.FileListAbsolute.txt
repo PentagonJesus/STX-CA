@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Empire of Straeax Special Forces\1.5\Assemblies\EmpireStraesaxSpecForces.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Empire of Straeax Special Forces\1.5\Assemblies\EmpireStraesaxSpecForces.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Empire of Straeax Special Forces\Source\obj\Debug\EmpireStraesaxSpecForces.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Empire of Straeax Special Forces\Source\obj\Debug\EmpireStraesaxSpecForces.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Empire of Straeax Special Forces\Source\obj\Debug\EmpireStraesaxSpecForces.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Empire of Straeax Special Forces\Source\obj\Debug\EmpireStraesaxSpecForces.pdb

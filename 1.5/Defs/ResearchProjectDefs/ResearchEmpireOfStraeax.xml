@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>StraeaxArmory</defName>
+    <label>straeax armory</label>
+    <description>Build weapons and armors used by the Straeax Empire.</description>
+    <tab>StraeaxResearchTab</tab>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>ChargedShot</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->straeax empire</li>
+
+        <li>subject_story->studied straeax empire history and armaments</li>
+        <li>subject_story->researched a new mechanism for making thermal ammo</li>
+        <li>subject_story->analyzed weapon and armor blueprints</li>
+
+        <li>subject_gerund->analyzing blueprints</li>
+
+        <li>subject_gerund->utilising thermal ammo</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>StraeaxRailGun</defName>
+    <label>straeax rail gun</label>
+    <description>Build a powerful rail gun.</description>
+    <tab>StraeaxResearchTab</tab>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>StraeaxArmory</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->straeax empire rail guns</li>
+
+        <li>subject_story->researched the technology behind the rail guns</li>
+        <li>subject_story->analyzed rail gun blueprints</li>
+
+        <li>subject_gerund->analyzing blueprints</li>
+
+        <li>subject_gerund->setting up magnetic coils</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>

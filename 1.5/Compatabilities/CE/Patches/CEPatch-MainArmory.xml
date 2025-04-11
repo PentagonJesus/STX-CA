@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+				<!-- Apparel_ScoutArmor -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>18</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>43</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>0.8</MoveSpeed>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/equippedStatOffsets</xpath>
+				<value>
+					<ReloadSpeed>0.1</ReloadSpeed>
+					<CarryWeight>80</CarryWeight>
+					<CarryBulk>20</CarryBulk>
+					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/statBases/Mass </xpath>
+				<value>
+					<Mass>40</Mass>
+					<Bulk>90</Bulk>
+					<WornBulk>15</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Neck</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Neck</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+									<parts>
+										<li>Hand</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+									<parts>
+										<li>Hand</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+				<!-- Apparel_VanguardArmor -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>22</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>48</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/equippedStatOffsets</xpath>
+				<value>
+					<ReloadSpeed>0.1</ReloadSpeed>
+					<CarryWeight>120</CarryWeight>
+					<CarryBulk>40</CarryBulk>
+					<ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<MoveSpeed>0.2</MoveSpeed>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/statBases/Mass </xpath>
+				<value>
+					<Mass>40</Mass>
+					<Bulk>90</Bulk>
+					<WornBulk>12</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Neck</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Neck</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+									<parts>
+										<li>Hand</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+									<parts>
+										<li>Hand</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>
