@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>The Empire of Straeax: Combined Arms</name>
+    <author>YourAbyssalLove, R4 ℃, TMC Guy</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>StraeaxEmpire.CombinedArms</packageId>
+  <loadAfter>
+		<li>Ludeon.RimWorld</li>
+    <li>ceteam.combatextended</li>
+	</loadAfter>
+	<description>The Straeax Empires full combined armaments</description>
+</ModMetaData>
