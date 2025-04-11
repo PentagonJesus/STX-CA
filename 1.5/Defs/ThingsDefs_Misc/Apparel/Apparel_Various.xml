@@ -60,7 +60,7 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>0.2</MoveSpeed>
 			<AimingDelayFactor>-0.20</AimingDelayFactor>
 		</equippedStatOffsets>
 		<costList>
@@ -282,7 +282,10 @@
 		</costList>
 	</ThingDef>
 	<!-- Uniform Private -->
-	<ThingDef Name="ApparelEmpirePrivateUniform" ParentName="ApparelMakeableBase" Abstract="True">
+	<ThingDef ParentName="ApparelMakeableBase">
+	    <defName>Apparel_PrivateUniform</defName>
+	    <label>Private Uniform</label>
+		<description>Worn by privates or low ranking soldier.</description>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0</generateCommonality>
@@ -340,17 +343,10 @@
 			<Steel>15</Steel>
 		</costList>
 	</ThingDef>
-	<ThingDef ParentName="ApparelEmpirePrivateUniform">
-		<defName>Apparel_PrivateUniform</defName>
-		<label>Private Uniform</label>
-		<description>Worn by privates or low ranking soldier.</description>
-		<apparel>
-			<tags>
-				<li>Soldier</li>
-			</tags>
-		</apparel>
-	</ThingDef>
-	<ThingDef Name="ApparelEmpireOfficerUniform" ParentName="ApparelMakeableBase" Abstract="True">
+	<ThingDef ParentName="ApparelMakeableBase">
+	    <defName>Apparel_OfficerUniform</defName>
+	    <label>Officer Uniform</label>
+		<description>Only the most high-ranking officers and officials can wear this symbol of honor. Bears the eagle of courage for all to see and is highly decorated with medals.</description>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0</generateCommonality>
@@ -410,15 +406,5 @@
 			<Gold>5</Gold>
 			<Silver>10</Silver>
 		</costList>
-	</ThingDef>
-	<ThingDef ParentName="ApparelEmpireOfficerUniform">
-		<defName>Apparel_OfficerUniform</defName>
-		<label>Officer Uniform</label>
-		<description>Only the most high-ranking officers and officials can wear this symbol of honor. Bears the eagle of courage for all to see and is highly decorated with medals.</description>
-		<apparel>
-			<tags>
-				<li>Soldier</li>
-			</tags>
-		</apparel>
 	</ThingDef>
 </Defs>

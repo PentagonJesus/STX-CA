@@ -25,7 +25,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Apparel/ScoutHelmet/FirstHelmet</wornGraphicPath>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -33,7 +32,6 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers>
 				<li>Overhead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>Soldier</li>
@@ -47,45 +45,23 @@
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>4.5</Mass>
+			<Mass>2.5</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>16</ArmorRating_Sharp>
-			<ArmorRating_Blunt>36</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.27</ArmorRating_Heat>
-			<Insulation_Cold>1</Insulation_Cold>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>5</EquipDelay>
-			<Bulk>5</Bulk>
-			<WornBulk>1</WornBulk>
-			<NightVisionEfficiency_Apparel>0.75</NightVisionEfficiency_Apparel>
 		</statBases>
 		<equippedStatOffsets>
-			<SmokeSensitivity>-1</SmokeSensitivity>
-			<AimingAccuracy>0.20</AimingAccuracy>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<modExtensions>
-			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
-				<stats>
-					<li>
-						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-						<parts>
-							<li>Eye</li>
-						</parts>
-					</li>
-					<li>
-						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
-						<parts>
-							<li>Eye</li>
-						</parts>
-					</li>
-				</stats>
-			</li>
-		</modExtensions>
 		<costList>
-			<Plasteel>60</Plasteel>
+			<Plasteel>40</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
-			<DevilstrandCloth>20</DevilstrandCloth>
-			<Uranium>10</Uranium>
+			<DevilstrandCloth>10</DevilstrandCloth>
+			<Uranium>5</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- Headgear 2 -->
@@ -113,7 +89,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Apparel/VanguardHelmet/SecondHelmet</wornGraphicPath>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -121,7 +96,6 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers>
 				<li>Overhead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>Soldier</li>
@@ -135,28 +109,22 @@
 		<statBases>
 			<WorkToMake>21000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>5</Mass>
+			<Mass>2.8</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>18</ArmorRating_Sharp>
-			<ArmorRating_Blunt>40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.54</ArmorRating_Heat>
 			<Insulation_Cold>4</Insulation_Cold>
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>5</EquipDelay>
-			<Bulk>5.5</Bulk>
-			<WornBulk>1</WornBulk>
-			<NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
 		</statBases>
 		<equippedStatOffsets>
-			<SmokeSensitivity>-1</SmokeSensitivity>
-			<AimingAccuracy>0.15</AimingAccuracy>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-			<Suppressability MayRequire="CETeam.CombatExtended">-0.15</Suppressability>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>90</Plasteel>
-			<DevilstrandCloth>20</DevilstrandCloth>
+			<Plasteel>55</Plasteel>
+			<DevilstrandCloth>10</DevilstrandCloth>
 			<Uranium>25</Uranium>
 		</costList>
 	</ThingDef>
@@ -185,7 +153,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Apparel/RearguardHelmet/ThirdHelmet</wornGraphicPath>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -193,7 +160,6 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers>
 				<li>Overhead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>Soldier</li>
@@ -207,30 +173,24 @@
 		<statBases>
 			<WorkToMake>26250</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
-			<Mass>6.6</Mass>
+			<Mass>3</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>30</ArmorRating_Sharp>
-			<ArmorRating_Blunt>54</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>4</Insulation_Cold>
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
-			<Bulk>6</Bulk>
-			<WornBulk>1</WornBulk>
-			<NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
 		</statBases>
 		<equippedStatOffsets>
 			<PsychicSensitivity>-0.2</PsychicSensitivity>
-			<AimingAccuracy>0.1</AimingAccuracy>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-			<SmokeSensitivity>-1</SmokeSensitivity>
-			<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>130</Plasteel>
-			<DevilstrandCloth>30</DevilstrandCloth>
-			<Uranium>35</Uranium>
+			<Plasteel>65</Plasteel>
+			<DevilstrandCloth>15</DevilstrandCloth>
+			<Uranium>20</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- Headgear 4 -->
@@ -258,7 +218,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Apparel/SeekerHelmet/FourthHelmet</wornGraphicPath>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -266,7 +225,6 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers>
 				<li>Overhead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>Soldier</li>
@@ -278,50 +236,24 @@
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<statBases>
-			<WorkToMake>2600</WorkToMake>
+			<WorkToMake>26000</WorkToMake>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Mass>4</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>13</ArmorRating_Sharp>
-			<ArmorRating_Blunt>28</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.46</ArmorRating_Heat>
 			<Insulation_Cold>4</Insulation_Cold>
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
-			<Bulk>5</Bulk>
-			<WornBulk>1</WornBulk>
-			<NightVisionEfficiency_Apparel>1</NightVisionEfficiency_Apparel>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-			<SmokeSensitivity>-1</SmokeSensitivity>
-			<AimingAccuracy>0.7</AimingAccuracy>
 			<ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<modExtensions>
-			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
-				<stats>
-					<li>
-						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-						<parts>
-							<li>Eye</li>
-							<li>Nose</li>
-						</parts>
-					</li>
-					<li>
-						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
-						<parts>
-							<li>Eye</li>
-							<li>Nose</li>
-						</parts>
-					</li>
-				</stats>
-			</li>
-		</modExtensions>
 		<costList>
-			<ComponentSpacer>5</ComponentSpacer>
-			<Plasteel>35</Plasteel>
-			<DevilstrandCloth>25</DevilstrandCloth>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>20</Plasteel>
+			<DevilstrandCloth>15</DevilstrandCloth>
 			<Uranium>10</Uranium>
 		</costList>
 	</ThingDef>
@@ -351,7 +283,6 @@
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/PrivateHat/HatPrivate</wornGraphicPath>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -371,10 +302,10 @@
 			<MaxHitPoints>90</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.18</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.04</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -411,7 +342,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Apparel/OfficerHat/OfficeHat</wornGraphicPath>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -432,10 +362,10 @@
 			<MaxHitPoints>90</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.18</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.04</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

@@ -29,7 +29,11 @@
 					<CarryBulk>20</CarryBulk>
 					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.3</Suppressability>
 				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/equippedStatOffsets/AimingDelayFactor</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor"]/statBases/Mass </xpath>
@@ -55,13 +59,13 @@
 									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
 									<parts>
 										<li>Neck</li>
-										<li>Foot</li>
 									</parts>
 								</li>
 								<li>
 									<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 									<parts>
 										<li>Hand</li>
+										<li>Foot</li>
 									</parts>
 								</li>
 								<li>
@@ -112,7 +116,11 @@
 					<ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
 					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<MoveSpeed>0.2</MoveSpeed>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.3</Suppressability>
 				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/equippedStatOffsets/AimingDelayFactor</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/statBases/Mass </xpath>
@@ -138,13 +146,13 @@
 									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
 									<parts>
 										<li>Neck</li>
-										<li>Foot</li>
 									</parts>
 								</li>
 								<li>
 									<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 									<parts>
 										<li>Hand</li>
+										<li>Foot</li>
 									</parts>
 								</li>
 								<li>
@@ -173,7 +181,467 @@
 					</modExtensions>
 				</value>
 			</li>
-
+				<!-- Apparel_RearguardArmor -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>36</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>64</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>160</CarryWeight>
+					<CarryBulk>50</CarryBulk>
+					<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.3</Suppressability>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/equippedStatOffsets/AimingDelayFactor</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/Mass </xpath>
+				<value>
+					<Mass>80</Mass>
+					<Bulk>100</Bulk>
+					<WornBulk>15</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Neck</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Neck</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+									<parts>
+										<li>Hand</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+									<parts>
+										<li>Hand</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+				<!-- Apparel_SeekerdArmor -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>13</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>35</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/equippedStatOffsets/AimingDelayFactor</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>1.2</MoveSpeed>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/equippedStatOffsets</xpath>
+				<value>
+					<ReloadSpeed>0.2</ReloadSpeed>
+					<CarryWeight>55</CarryWeight>
+					<CarryBulk>10</CarryBulk>
+					<ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.2</Suppressability>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/statBases/Mass </xpath>
+				<value>
+					<Mass>25</Mass>
+					<Bulk>75</Bulk>
+					<WornBulk>13</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Neck</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Neck</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+									<parts>
+										<li>Hand</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+									<parts>
+										<li>Hand</li>
+										<li>Foot</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+									<parts>
+										<li>Leg</li>
+										<li>Arm</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+		<!-- Uniforms -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+				<!-- Apparel_EmpireOfficerHat -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_EmpireOfficerHat"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
+				</value>
+			</li>
+				<!-- ApparelEmpireOfficerUniform -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_EmpirePrivateHat"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_PrivateUniform"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_OfficerUniform"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+		<!-- Helmets -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+				<!-- Apparel_ScoutHelmet -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>16</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>36</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/statBases/Mass </xpath>
+				<value>
+					<Mass>4.5</Mass>
+					<Bulk>5</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/equippedStatOffsets</xpath>
+				<value>
+					<AimingAccuracy>0.2</AimingAccuracy>
+					<SmokeSensitivity>-1</SmokeSensitivity>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.15</Suppressability>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/statBases</xpath>
+				<value>
+					<NightVisionEfficiency_Apparel>0.75</NightVisionEfficiency_Apparel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+				<!-- Apparel_VanguardHelmet -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>18</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>40</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/statBases/Mass </xpath>
+				<value>
+					<Mass>5</Mass>
+					<Bulk>5.5</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/equippedStatOffsets</xpath>
+				<value>
+					<AimingAccuracy>0.15</AimingAccuracy>
+					<SmokeSensitivity>-1</SmokeSensitivity>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.15</Suppressability>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/statBases</xpath>
+				<value>
+					<NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+				<!-- Apparel_RearguardHelmet -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>30</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>54</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/Mass </xpath>
+				<value>
+					<Mass>6.6</Mass>
+					<Bulk>6</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/equippedStatOffsets</xpath>
+				<value>
+					<AimingAccuracy>0.1</AimingAccuracy>
+					<SmokeSensitivity>-1</SmokeSensitivity>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases</xpath>
+				<value>
+					<NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+				<!-- Apparel_SeekerHelmet -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>13</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>28</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/statBases/Mass </xpath>
+				<value>
+					<Mass>4</Mass>
+					<Bulk>5</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/equippedStatOffsets</xpath>
+				<value>
+					<AimingAccuracy>0.7</AimingAccuracy>
+					<SmokeSensitivity>-1</SmokeSensitivity>
+					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					<Suppressability MayRequire="CETeam.CombatExtended">-0.1</Suppressability>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/statBases</xpath>
+				<value>
+					<NightVisionEfficiency_Apparel>1</NightVisionEfficiency_Apparel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
