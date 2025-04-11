@@ -183,6 +183,12 @@
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>100</Plasteel>
+			<DevilstrandCloth>40</DevilstrandCloth>
+			<Uranium>20</Uranium>
+		</costList>
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
@@ -213,6 +219,12 @@
 			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>14</EquipDelay>
 		</statBases>
+		<costList>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>240</Plasteel>
+			<DevilstrandCloth>80</DevilstrandCloth>
+			<Uranium>40</Uranium>
+		</costList>
 		<comps>
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
