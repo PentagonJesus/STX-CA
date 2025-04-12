@@ -245,13 +245,14 @@
     <defName>Gun_Diatrypo</defName>
     <statBases>
       <RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
-      <SightsEfficiency>3</SightsEfficiency>
-      <ShotSpread>0.04</ShotSpread>
-      <SwayFactor>2.72</SwayFactor>
+      <SightsEfficiency>2.5</SightsEfficiency>
+      <ShotSpread>0.38</ShotSpread>
+      <SwayFactor>3</SwayFactor>
+      <NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
       <Bulk>13.00</Bulk>
     </statBases>
     <Properties>
-      <recoilAmount>0.92</recoilAmount>
+      <recoilAmount>1.7</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_MagnetizedThermalRounds</defaultProjectile>
