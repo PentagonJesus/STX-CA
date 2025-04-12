@@ -182,30 +182,30 @@
 		<defName>Bullet_ThermalBolt</defName>
 		<label>Thermal Bolt</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>25</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>PrometheumFlame</def>
 					<amount>3</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>28</armorPenetrationSharp>
-			<armorPenetrationBlunt>59</armorPenetrationBlunt>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>30</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseThermalBoltBullet">
 		<defName>Bullet_ThermalBolt_AP</defName>
 		<label>Thermal Bolt (SH)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>18</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>PrometheumFlame</def>
-					<amount>6</amount>
+					<amount>4</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>72</armorPenetrationSharp>
-			<armorPenetrationBlunt>46</armorPenetrationBlunt>
+			<armorPenetrationSharp>48</armorPenetrationSharp>
+			<armorPenetrationBlunt>37</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 		<!-- Slag Rounds -->
@@ -240,15 +240,15 @@
 		<defName>Bullet_SlagRound_AP</defName>
 		<label>Slag Round (SH Condensed)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>53</damageAmountBase>
+			<damageAmountBase>36</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>Burn</def>
 					<amount>6</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>80</armorPenetrationSharp>
-			<armorPenetrationBlunt>68</armorPenetrationBlunt>
+			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<armorPenetrationBlunt>115</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 		<!-- Magnetized Bolts -->
