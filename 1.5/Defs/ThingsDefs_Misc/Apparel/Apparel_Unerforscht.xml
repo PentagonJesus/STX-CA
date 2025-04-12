@@ -58,7 +58,7 @@
 			<Uranium>40</Uranium>
 		</costList>
 		<comps>
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<abilities>
 					<li>Ability_QuantumTeleport</li>
 				</abilities>
