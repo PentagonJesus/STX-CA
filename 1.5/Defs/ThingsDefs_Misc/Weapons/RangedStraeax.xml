@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!--Chazos L3-->
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_ChazosLThree</defName>
 		<label>chazos L3</label>
@@ -85,6 +88,9 @@
 			</li>
 		</tools>
 	</ThingDef>
+
+	<!--Skotadi-->
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Skotadi</defName>
 		<label>Skotadi Rifle</label>
@@ -172,6 +178,9 @@
 			</li>
 		</tools>
 	</ThingDef>
+
+	<!--Corvus-->
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Corvus</defName>
 		<label>Corvus SMG</label>
@@ -259,6 +268,9 @@
 			</li>
 		</tools>
 	</ThingDef>
+
+	<!--Apokries-->
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Apokries</defName>
 		<label>Apokries Shotgun</label>
@@ -346,35 +358,9 @@
 			</li>
 		</tools>
 	</ThingDef>
-	<!--Strictly Vanilla-->
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_ThermalBoltNonCE</defName>
-		<label>thermal bolt</label>
-		<graphicData>
-			<texPath>Things/Projectile/Projectile_ThermalBolt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Flame</damageDef>
-			<damageAmountBase>26</damageAmountBase>
-			<armorPenetrationBase>0.64</armorPenetrationBase>
-			<speed>120</speed>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_SlagRoundNonCE</defName>
-		<label>Slag Round</label>
-		<graphicData>
-			<texPath>Things/Projectile/Projectile_SlagRounds</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Flame</damageDef>
-			<damageAmountBase>8</damageAmountBase>
-			<armorPenetrationBase>0.64</armorPenetrationBase>
-			<speed>140</speed>
-		</projectile>
-	</ThingDef>
+	
+	<!-- Diatrypo -->
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Diatrypo</defName>
 		<label>diatrypo rail gun</label>
@@ -398,7 +384,7 @@
 			<WorkToMake>75000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
+			<AimingAccuracy>0.2</AimingAccuracy>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>StraeaxRailGun</researchPrerequisite>
@@ -448,9 +434,40 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+	<!--Strictly Vanilla-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ThermalBoltNonCE</defName>
+		<label>thermal bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_ThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationBase>0.64</armorPenetrationBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SlagRoundNonCE</defName>
+		<label>Slag Round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_SlagRounds</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.64</armorPenetrationBase>
+			<speed>140</speed>
+		</projectile>
+	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_Diatrypo</defName>
-		<label>rail gun shot</label>
+		<label>Magnetized thermal bolt</label>
 		<graphicData>
 			<texPath>Things/Projectile/Projectile_MagnetizedThermalRounds</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
