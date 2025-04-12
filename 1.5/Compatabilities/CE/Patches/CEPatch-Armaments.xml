@@ -66,7 +66,7 @@
     <defName>Gun_Skotadi</defName>
     <statBases>
       <Mass>3</Mass>
-      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <SightsEfficiency>1.4</SightsEfficiency>
       <ShotSpread>0.08</ShotSpread>
       <SwayFactor>1</SwayFactor>
@@ -127,9 +127,9 @@
     <defName>Gun_Corvus</defName>
     <statBases>
       <Mass>3</Mass>
-      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
       <SightsEfficiency>1.2</SightsEfficiency>
-      <ShotSpread>0.06</ShotSpread>
+      <ShotSpread>0.04</ShotSpread>
       <SwayFactor>0.64</SwayFactor>
       <Bulk>9.5</Bulk>
       <!-- <ToughnessRating>2.5</ToughnessRating> -->
@@ -244,7 +244,7 @@
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_Diatrypo</defName>
     <statBases>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.64</RangedWeapon_Cooldown>
       <SightsEfficiency>1.5</SightsEfficiency>
       <ShotSpread>0.01</ShotSpread>
       <SwayFactor>0.88</SwayFactor>
