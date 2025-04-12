@@ -4,7 +4,7 @@
 		<label>Unerforscht commando helmet</label>
 		<description>Some say it is magic. Others say it is the empire going to far into the depths of quantum travel. It is unknown how this armor works exactly it is highly classified but it gives the wear the ability to teleports every 20 seconds. This armor is mainly only entrusted to the Unerforscht commandos for special missions but has been seen on other special forces units to.</description>
 		<statBases>
-			<WorkToMake>21000</WorkToMake>aq
+			<WorkToMake>21000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>1.5</Mass>
 			<Flammability>0.4</Flammability>
