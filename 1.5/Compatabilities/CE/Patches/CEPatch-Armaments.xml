@@ -244,10 +244,10 @@
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_Diatrypo</defName>
     <statBases>
-      <RangedWeapon_Cooldown>1.64</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.5</SightsEfficiency>
-      <ShotSpread>0.06</ShotSpread>
-      <SwayFactor>0.88</SwayFactor>
+      <RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
+      <SightsEfficiency>3</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>2.72</SwayFactor>
       <Bulk>13.00</Bulk>
     </statBases>
     <Properties>
