@@ -1,0 +1,143 @@
+<Defs>
+<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+	<defName>SF_UnerforschtCommandoHelmet</defName>
+	<label>Unerforscht commando helmet</label>
+	<description>Some say it is magic. Others say it is the empire going to far into the depths of quantum travel. It is unknown how this armor works exactly it is highly classified but it gives the wear the ability to teleports every 20 seconds. This armor is mainly only entrusted to the Unerforscht commandos for special missions but has been seen on other special forces units to.</description>
+	<statBases>
+		<WorkToMake>21000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>1.5</Mass>
+		<Flammability>0.4</Flammability>
+		<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.54</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+	</statBases>
+	<costList>
+		<ComponentSpacer>2</ComponentSpacer>
+		<Plasteel>100</Plasteel>
+		<DevilstrandCloth>40</DevilstrandCloth>
+		<Uranium>20</Uranium>
+	</costList>
+	<equippedStatOffsets>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+	</equippedStatOffsets>
+	<graphicData>
+		<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</wornGraphicPath>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+	</apparel>
+	<colorGenerator Inherit="False" IsNull="True"></colorGenerator>
+</ThingDef>
+<ThingDef ParentName="ApparelArmorPowerBase">
+	<defName>SF_UnerforschtCommandoArmor</defName>
+	<label>Unerforscht commando armor</label>
+	<description>Some say it is magic. Others say it is the empire going to far into the depths of quantum travel. It is unknown how this armor works exactly it is highly classified but it gives the wear the ability to teleports every 20 seconds. This armor is mainly only entrusted to the Unerforscht commandos for special missions but has been seen on other special forces units to.</description>
+	<statBases>
+		<WorkToMake>60000</WorkToMake>
+		<MaxHitPoints>340</MaxHitPoints>
+		<Mass>12</Mass>
+		<Flammability>0.4</Flammability>
+		<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.54</ArmorRating_Heat>
+		<Insulation_Cold>34</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+		<EquipDelay>14</EquipDelay>
+	</statBases>
+	<costList>
+		<ComponentSpacer>6</ComponentSpacer>
+		<Plasteel>240</Plasteel>
+		<DevilstrandCloth>80</DevilstrandCloth>
+		<Uranium>40</Uranium>
+	</costList>
+	<comps>
+		<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+			<abilities>
+				<li>Ability_QuantumTeleport</li>
+			</abilities>
+		</li>
+	</comps>
+	<equippedStatOffsets>
+		<MoveSpeed>0.4</MoveSpeed>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+	</equippedStatOffsets>
+	<tickerType>Normal</tickerType>
+	<graphicData>
+		<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</texPath>
+	</graphicData>
+	<!--<thingClass>EmpireStraesaxSpecForces.Apparel_Teleporter</thingClass>-->
+	<apparel>
+		<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</wornGraphicPath>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+	</apparel>
+	<colorGenerator Inherit="False" IsNull="True"></colorGenerator>
+</ThingDef>
+<!--Useless?-->
+<ThingDef ParentName="MoteBase">
+	<defName>SF_TeleportFlash</defName>
+	<graphicData>
+		<texPath>Things/Mote/SparkThrown</texPath>
+	</graphicData>
+	<altitudeLayer>MoteOverhead</altitudeLayer>
+	<mote>
+		<fadeInTime>0.03</fadeInTime>
+		<solidTime>0.04</solidTime>
+		<fadeOutTime>0.13</fadeOutTime>
+		<collide>true</collide>
+	</mote>
+</ThingDef>
+<EffecterDef>
+	<defName>SF_TeleportEffecter</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<positionRadius>0.02</positionRadius>
+			<fleckDef>ElectricalSpark</fleckDef>
+			<burstCount>4~5</burstCount>
+			<speed>3.3~5</speed>
+			<scale>3</scale>
+			<spawnLocType>OnSource</spawnLocType>
+		</li>
+		<li>
+			<initialDelayTicks>20</initialDelayTicks>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<speed>1</speed>
+			<scale>0.3</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<fleckDef>PsycastAreaEffect</fleckDef>
+			<maxMoteCount>1</maxMoteCount>
+		</li>
+	</children>
+	<offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+	<positionRadius>0.1</positionRadius>
+</EffecterDef>
+<!--Experimental-->
+<VFECore.Abilities.AbilityDef>
+	<defName>Ability_QuantumTeleport</defName>
+	<label>Quantum teleport</label>
+	<description>Magical teleportation of the commando armor.</description>
+	<abilityClass>EmpireStraesaxSpecForces.QuantumTeleport</abilityClass>
+	<targetMode>Location</targetMode>
+	<iconPath>UI/Abilities/Skip</iconPath>
+	<castTime>60</castTime>
+	<range>60</range>
+	<cooldownTime>1200</cooldownTime>
+	<needsTicking>true</needsTicking>
+	<keepCarryingThing>true</keepCarryingThing>
+	<castSound>PsychicShockLanceCast</castSound>
+	<modExtensions>
+		<li Class="EmpireStraesaxSpecForces.QuantumTeleportExtension">
+			<soundPreviousLocation>MechResurrect_Cast</soundPreviousLocation>
+		</li>
+	</modExtensions>
+</VFECore.Abilities.AbilityDef>
+</Defs>
