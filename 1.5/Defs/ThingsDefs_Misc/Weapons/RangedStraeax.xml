@@ -376,11 +376,11 @@
 		</thingSetMakerTags>
 		<statBases>
 			<Mass>8</Mass>
-			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.7</AccuracyShort>
-			<AccuracyMedium>0.76</AccuracyMedium>
+			<AccuracyTouch>0.46</AccuracyTouch>
+			<AccuracyShort>0.58</AccuracyShort>
+			<AccuracyMedium>0.72</AccuracyMedium>
 			<AccuracyLong>0.8</AccuracyLong>
-			<RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 			<WorkToMake>75000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
