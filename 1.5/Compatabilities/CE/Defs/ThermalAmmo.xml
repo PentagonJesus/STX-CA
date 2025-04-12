@@ -182,15 +182,15 @@
 		<defName>Bullet_ThermalBolt</defName>
 		<label>Thermal Bolt</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>PrometheumFlame</def>
-					<amount>5</amount>
+					<amount>3</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>38</armorPenetrationSharp>
-			<armorPenetrationBlunt>63</armorPenetrationBlunt>
+			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<armorPenetrationBlunt>59</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseThermalBoltBullet">
@@ -201,11 +201,11 @@
 			<secondaryDamage>
 				<li>
 					<def>PrometheumFlame</def>
-					<amount>8</amount>
+					<amount>6</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>127</armorPenetrationSharp>
-			<armorPenetrationBlunt>76</armorPenetrationBlunt>
+			<armorPenetrationSharp>72</armorPenetrationSharp>
+			<armorPenetrationBlunt>46</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 		<!-- Slag Rounds -->
@@ -223,16 +223,16 @@
 		<defName>Bullet_SlagRound</defName>
 		<label>Slag Round</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>14</damageAmountBase>
 			<secondaryDamage>
 				<li>
-					<def>PrometheumFlame</def>
-					<amount>1</amount>
+					<def>Burn</def>
+					<amount>3</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>34</armorPenetrationSharp>
-			<armorPenetrationBlunt>61</armorPenetrationBlunt>
-			<pelletCount>16</pelletCount>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>45</armorPenetrationBlunt>
+			<pelletCount>12</pelletCount>
 			<spreadMult>8.9</spreadMult>
 		</projectile>
 	</ThingDef>
@@ -243,12 +243,12 @@
 			<damageAmountBase>53</damageAmountBase>
 			<secondaryDamage>
 				<li>
-					<def>PrometheumFlame</def>
-					<amount>3</amount>
+					<def>Burn</def>
+					<amount>6</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>108</armorPenetrationSharp>
-			<armorPenetrationBlunt>62</armorPenetrationBlunt>
+			<armorPenetrationSharp>80</armorPenetrationSharp>
+			<armorPenetrationBlunt>68</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 		<!-- Magnetized Bolts -->
@@ -267,11 +267,11 @@
 		<defName>Bullet_MagnetizedThermalRounds</defName>
 		<label>Magnetized Thermal Rounds</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>94</damageAmountBase>
+			<damageAmountBase>74</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>PrometheumFlame</def>
-					<amount>6</amount>
+					<amount>2</amount>
 				</li>
 			</secondaryDamage>
 			<armorPenetrationSharp>1364</armorPenetrationSharp>
