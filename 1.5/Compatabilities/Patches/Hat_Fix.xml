@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      Defs/ThingDef[not(@ParentName="HatMakeableBase" or @ParentName="ArmorHelmetMakeableBase" or @ParentName="NobleHatMakeableBase")]/apparel[not(parentTagDef) and bodyPartGroups/li[.="UpperHead" or .="FullHead"]]
+    </xpath>
+    <value>
+      <parentTagDef>ApparelHead</parentTagDef>
+    </value>
+  </Operation>
+</Patch>
