@@ -383,9 +383,6 @@
 			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 			<WorkToMake>75000</WorkToMake>
 		</statBases>
-		<equippedStatOffsets>
-			<AimingAccuracy>0.2</AimingAccuracy>
-		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>StraeaxRailGun</researchPrerequisite>
 			<skillRequirements>
