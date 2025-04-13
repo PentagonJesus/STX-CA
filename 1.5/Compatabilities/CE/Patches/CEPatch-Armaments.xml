@@ -20,7 +20,7 @@
       <recoilAmount>1.5</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
+      <defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
       <warmupTime>0.1</warmupTime>
       <range>24</range>
       <soundCast>Shot_ChargeRifle</soundCast>
@@ -30,7 +30,7 @@
     <AmmoUser>
       <magazineSize>15</magazineSize>
       <reloadTime>2</reloadTime>
-      <ammoSet>AmmoSet_ThermalBolts</ammoSet>
+      <ammoSet>AmmoSet_LightThermalBolts</ammoSet>
     </AmmoUser>
     <FireModes>
       <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -59,6 +59,68 @@
       <AimingAccuracy>0.1</AimingAccuracy>
     </value>
   </Operation>
+	
+    <!--Chazos L4-->
+
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	    <defName>Gun_ChazosLFour</defName>
+	    <statBases>
+		    <Mass>1.39</Mass>
+		    <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+		    <SightsEfficiency>1.25</SightsEfficiency>
+		    <ShotSpread>0.1</ShotSpread>
+		    <SwayFactor>0.9</SwayFactor>
+		    <Bulk>1.5</Bulk>
+		    <!-- <ToughnessRating>2.5</ToughnessRating> -->
+		    <!-- Base toughness rating of a weapon -->
+		    <WorkToMake>50000</WorkToMake>
+	    </statBases>
+	    <Properties>
+		    <recoilAmount>3</recoilAmount>
+		    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+		    <hasStandardCommand>true</hasStandardCommand>
+		    <defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
+		    <warmupTime>0.1</warmupTime>
+		    <range>20</range>
+		    <soundCast>Shot_ChargeRifle</soundCast>
+		    <soundCastTail>GunTail_Medium</soundCastTail>
+		    <muzzleFlashScale>9</muzzleFlashScale>
+		    <burstShotCount>3</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+	    </Properties>
+	    <AmmoUser>
+		    <magazineSize>25</magazineSize>
+		    <reloadTime>2</reloadTime>
+		    <ammoSet>AmmoSet_LightThermalBolts</ammoSet>
+	    </AmmoUser>
+	    <FireModes>
+		    <aiUseBurstMode>FALSE</aiUseBurstMode>
+		    <aiAimMode>AimedShot</aiAimMode>
+	    </FireModes>
+	    <weaponTags>
+		    <li>CE_Sidearm</li>
+		    <li>CE_AI_BROOM</li>
+		    <li>CE_OneHandedWeapon</li>
+		    <li>AdvancedGun</li>
+	    </weaponTags>
+    </Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.00,1.00</DrawSize>
+				<DrawOffset>0.0,0.0</DrawOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.1</AimingAccuracy>
+		</value>
+	</Operation>
+
 
   <!--Skotadi-->
 	

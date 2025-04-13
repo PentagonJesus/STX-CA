@@ -19,6 +19,12 @@
 		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaMedium</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
+		<defName>AmmoLightThermalBolts</defName>
+		<label>Light Thermal Bolts</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaMedium</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
 		<defName>AmmoSlagRounds</defName>
 		<label>Thermal Bolts</label>
 		<parent>AmmoAdvanced</parent>
@@ -37,6 +43,15 @@
 		<ammoTypes>
 			<Ammo_ThermalBolts>Bullet_ThermalBolt</Ammo_ThermalBolts>
 			<Ammo_ThermalBolts_AP>Bullet_ThermalBolt_AP</Ammo_ThermalBolts_AP>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedPistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_LightThermalBolts</defName>
+		<label>Light Thermal Bolts</label>
+		<ammoTypes>
+			<Ammo_ThermalBolts>Bullet_LightThermalBolt</Ammo_ThermalBolts>
+			<Ammo_ThermalBolts_AP>Bullet_LightThermalBolt_AP</Ammo_ThermalBolts_AP>
 		</ammoTypes>
 		<similarTo>AmmoSet_ChargedPistol</similarTo>
 	</CombatExtended.AmmoSetDef>
@@ -89,6 +104,46 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ThermalBoltsBase">
 		<defName>Ammo_ThermalBolts_AP</defName>
 		<label>Thermal Bolts (SH)</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>ThermalAP</ammoClass>
+	</ThingDef>
+		<!-- Light Thermal Bolts -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="LightThermalBoltsBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>Thermal bolt ammo used by weapons of Straeax Empire.</description>
+		<statBases>
+			<Mass>0.027</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoLightThermalBolts</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+	</ThingDef> 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ThermalBoltsBase">
+		<defName>Ammo_LightThermalBolts</defName>
+		<label>Light Thermal Bolts</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>Thermal</ammoClass>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ThermalBoltsBase">
+		<defName>Ammo_LightThermalBolts_AP</defName>
+		<label>Light Thermal Bolts (SH)</label>
 		<graphicData>
 			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
 			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
@@ -185,8 +240,9 @@
 			<damageAmountBase>20</damageAmountBase>
 			<secondaryDamage>
 				<li>
-					<def>PrometheumFlame</def>
+					<def>Flame</def>
 					<amount>3</amount>
+					<chance>0.4</chance>
 				</li>
 			</secondaryDamage>
 			<armorPenetrationSharp>20</armorPenetrationSharp>
@@ -200,12 +256,57 @@
 			<damageAmountBase>18</damageAmountBase>
 			<secondaryDamage>
 				<li>
-					<def>PrometheumFlame</def>
+					<def>Flame</def>
 					<amount>4</amount>
+					<chance>0.4</chance>
 				</li>
 			</secondaryDamage>
 			<armorPenetrationSharp>48</armorPenetrationSharp>
 			<armorPenetrationBlunt>37</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+		<!-- Light Thermal Bolts -->
+	<ThingDef Name="BaseLightThermalBoltBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_ThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>175</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseLightThermalBoltBullet">
+		<defName>Bullet_LightThermalBolt</defName>
+		<label>Light Thermal Bolt</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>12</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>3</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>18</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseLightThermalBoltBullet">
+		<defName>Bullet_LightThermalBolt_AP</defName>
+		<label>Light Thermal Bolt (SH)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>4</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<armorPenetrationBlunt>24</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 		<!-- Slag Rounds -->
@@ -267,11 +368,11 @@
 		<defName>Bullet_MagnetizedThermalRounds</defName>
 		<label>Magnetized Thermal Rounds</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>74</damageAmountBase>
+			<damageAmountBase>24</damageAmountBase>
 			<secondaryDamage>
 				<li>
-					<def>PrometheumFlame</def>
-					<amount>2</amount>
+					<def>Vaporize</def>
+					<amount>50</amount>
 				</li>
 			</secondaryDamage>
 			<armorPenetrationSharp>1364</armorPenetrationSharp>
