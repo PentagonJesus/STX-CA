@@ -5,9 +5,9 @@
   
   <ResearchTabDef>
     <defName>StraeaxResearchTab</defName>
-    <label>Straeax</label>
+    <label>Straeax Empire</label>
     <generalTitle>Straeax research projects</generalTitle>
-    <generalDescription>Unlock technologies used by the Straeax Empire.</generalDescription>
+    <generalDescription>Delve into the secrets of the Straeax Empire.</generalDescription>
   </ResearchTabDef>
 
 </Defs>
