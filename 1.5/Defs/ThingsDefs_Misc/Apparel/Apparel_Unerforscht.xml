@@ -1,28 +1,31 @@
 <Defs>
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>SF_UnerforschtCommandoHelmet</defName>
-		<label>Unerforscht commando helmet</label>
-		<description>Some say it is magic. Others say it is the empire going to far into the depths of quantum travel. It is unknown how this armor works exactly it is highly classified but it gives the wear the ability to teleports every 20 seconds. This armor is mainly only entrusted to the Unerforscht commandos for special missions but has been seen on other special forces units to.</description>
+		<label>Stygian Riftcutter Helmet</label>
+		<description>(Placeholder) The Stygian Riftcutter is a close kept secret to the Straeax Empire, just like its sister the *REDACTED* in which uses the *REDACTED* system. The Styigan Riftcutter main use is decimation of forces with minimal resistance, its Rift Cutter Core allows for essentially teleporting through the quantum realm, read blacksite file Nova.V82 for more info.</description>
 		<statBases>
 			<WorkToMake>21000</WorkToMake>
-			<MaxHitPoints>150</MaxHitPoints>
+			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>1.5</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<costList>
-			<ComponentSpacer>2</ComponentSpacer>
-			<Plasteel>100</Plasteel>
-			<DevilstrandCloth>40</DevilstrandCloth>
-			<Uranium>20</Uranium>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>80</Plasteel>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
+			<DevilstrandCloth>20</DevilstrandCloth>
+			<Uranium>10</Uranium>
 		</costList>
 		<equippedStatOffsets>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1.0</SlaveSuppressionOffset>
+			<ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<graphicData>
 			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
@@ -37,25 +40,26 @@
 	</ThingDef>
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>SF_UnerforschtCommandoArmor</defName>
-		<label>Unerforscht commando armor</label>
-		<description>Some say it is magic. Others say it is the empire going to far into the depths of quantum travel. It is unknown how this armor works exactly it is highly classified but it gives the wear the ability to teleports every 20 seconds. This armor is mainly only entrusted to the Unerforscht commandos for special missions but has been seen on other special forces units to.</description>
+		<label>Stygian Riftcutter Armor</label>
+		<description>(Placeholder) The Stygian Riftcutter is a close kept secret to the Straeax Empire, just like its sister the *REDACTED* in which uses the *REDACTED* system. The Styigan Riftcutter main use is decimation of forces with minimal resistance, its Rift Cutter Core allows for essentially teleporting through the quantum realm, read blacksite file Nova.V82 for more info.</description>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
-			<MaxHitPoints>340</MaxHitPoints>
-			<Mass>12</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>34</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<MaxHitPoints>440</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>14</EquipDelay>
 		</statBases>
 		<costList>
-			<ComponentSpacer>6</ComponentSpacer>
-			<Plasteel>240</Plasteel>
-			<DevilstrandCloth>80</DevilstrandCloth>
-			<Uranium>40</Uranium>
+			<ComponentSpacer>4</ComponentSpacer>
+			(VoltheriumHexTubes>6</VoltheriumHexTubes>
+			<Plasteel>200</Plasteel>
+			<DevilstrandCloth>60</DevilstrandCloth>
+			<Uranium>20</Uranium>
 		</costList>
 		<comps>
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
@@ -66,7 +70,10 @@
 		</comps>
 		<equippedStatOffsets>
 			<MoveSpeed>0.4</MoveSpeed>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<ToxicResistance>0.75</ToxicResistance>
+			<WorkSpeedGlobal>0.02</WorkSpeedGlobal>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1.0</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -123,8 +130,8 @@
 	<!-- Experimental -->
 	<VFECore.Abilities.AbilityDef>
 		<defName>Ability_QuantumTeleport</defName>
-		<label>Quantum teleport</label>
-		<description>Magical teleportation of the commando armor.</description>
+		<label>Quantum Jump</label>
+		<description>The "Quantum Jump" uses cutting edge technology known to few, even within the Straeax Empire, it uses the Rift Cutter Core to gain its ability to teleport, read blacksite file Nova.V82 for more info.</description>
 		<abilityClass>EmpireStraesaxSpecForces.QuantumTeleport</abilityClass>
 		<targetMode>Location</targetMode>
 		<iconPath>UI/Abilities/Skip</iconPath>
