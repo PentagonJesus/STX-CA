@@ -3,13 +3,13 @@
 	<!-- Headgear 1 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_ScoutHelmet</defName>
-		<label>2nd Divison Scout Helmet</label>
-		<description>Well known for its read visor that stares down its enemies. The scout armor is worn by Imperial scouts usually sent on recon missions.  Contrary to their name they can come heavily armed and can take front-line roles in many scenarios.</description>
+		<label>Veltrion Pathfinder</label>
+		<description>(Placeholder) The Veltrion Pathfinder is a lightweight agile armor built off of the scout-class frame.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>ReconArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmoryr</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -43,37 +43,38 @@
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>2.5</Mass>
 			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
-			<Plasteel>40</Plasteel>
+			<Plasteel>20</Plasteel>
+			<VoltheriumHexTubes>2</VoltheriumHexTubes>
 			<ComponentSpacer>1</ComponentSpacer>
-			<DevilstrandCloth>10</DevilstrandCloth>
-			<Uranium>5</Uranium>
+			<DevilstrandCloth>6</DevilstrandCloth>
+			<Uranium>2</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- Headgear 2 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_VanguardHelmet</defName>
-		<label>245th Divison Vanguard Helmet</label>
-		<description>This armor is the standard-issue infantry uniform. It provides decent protection compared to other armors on front-line offense Attact</description>
+		<label>Alkeon Breacher</label>
+		<description>(Placeholder) The Alkeon Breacher, designed for frontline combat and intense CQB firefights.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -107,15 +108,15 @@
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<statBases>
-			<WorkToMake>21000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>320</MaxHitPoints>
 			<Mass>2.8</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -123,21 +124,22 @@
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>55</Plasteel>
-			<DevilstrandCloth>10</DevilstrandCloth>
-			<Uranium>25</Uranium>
+			<Plasteel>30</Plasteel>
+			<DevilstrandCloth>8</DevilstrandCloth>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<Uranium>6</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- Headgear 3 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_RearguardHelmet</defName>
-		<label>50th Divison Rearguard Helmet</label>
-		<description>This armor is only worn by the most skilled and loyal soldiers. Meant to be the last line of defense against an attack on the empire’s capital city this armor is one of the most protective the empire has.  It will protect the wearer against all but the most powerful projectiles.  This armor also bears the eagle of courage directly on the front of the helmet for all to see.</description>
+		<label>Eidolon Bastion</label>
+		<description>(Placeholder) The Eidolon Bastion is the most heavily armored suit in active deployment across Straeax military branches.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -171,15 +173,15 @@
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<statBases>
-			<WorkToMake>26250</WorkToMake>
-			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>28460</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.74</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.2</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -188,21 +190,22 @@
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>65</Plasteel>
-			<DevilstrandCloth>15</DevilstrandCloth>
-			<Uranium>20</Uranium>
+			<Plasteel>40</Plasteel>
+			<VoltheriumHexTubes>4</VoltheriumHexTubes>
+			<DevilstrandCloth>10</DevilstrandCloth>
+			<Uranium>10</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- Headgear 4 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_SeekerHelmet</defName>
-		<label>48th Divison Seeker Helmet</label>
-		<description>This armor is worn by the empire’s seekers and they are one of the most precise units there is.  They can hit almost any shot with their helmet’s built-in aim assist and can excel in hand-to-hand combat thanks to their light armor.</description>
+		<label>Xireth Precision</label>
+		<description>(Placeholder) The Xireth-Seeker class-Precsion helmet is a highly advanced helmet with an enhanced visor that shows projectile trajectory and possible shot paths ..</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -237,24 +240,25 @@
 		</apparel>
 		<statBases>
 			<WorkToMake>26000</WorkToMake>
-			<MaxHitPoints>120</MaxHitPoints>
+			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>4</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.86</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.46</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<ArmorRating_Heat>0.72</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Plasteel>20</Plasteel>
-			<DevilstrandCloth>15</DevilstrandCloth>
-			<Uranium>10</Uranium>
+			<VoltheriumHexTubes>3
+			<DevilstrandCloth>8</DevilstrandCloth>
+			<Uranium>5</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- HatPrivate -->
