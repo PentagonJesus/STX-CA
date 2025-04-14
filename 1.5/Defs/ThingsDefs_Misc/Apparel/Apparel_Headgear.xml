@@ -3,8 +3,8 @@
 	<!-- Headgear 1 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_ScoutHelmet</defName>
-		<label>Veltrion Pathfinder</label>
-		<description>(Placeholder) The Veltrion Pathfinder is a lightweight agile armor built off of the scout-class frame.</description>
+		<label>Veltrion Pathfinder Helmet</label>
+		<description>(Placeholder) The Veltrion Pathfinder Helmet is a lightweight helmet meant for use the the Veltrion Pathfinder armor.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -68,8 +68,8 @@
 	<!-- Headgear 2 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_VanguardHelmet</defName>
-		<label>Alkeon Breacher</label>
-		<description>(Placeholder) The Alkeon Breacher, designed for frontline combat and intense CQB firefights.</description>
+		<label>Alkeon Breacher Helmet</label>
+		<description>(Placeholder) The Alkeon Breacher Helmet designed for use with the Alkeon Breacher Armor.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -133,8 +133,8 @@
 	<!-- Headgear 3 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_RearguardHelmet</defName>
-		<label>Eidolon Bastion</label>
-		<description>(Placeholder) The Eidolon Bastion is the most heavily armored suit in active deployment across Straeax military branches.</description>
+		<label>Eidolon Bastion Helmet</label>
+		<description>(Placeholder) The Eidolon Bastion helmet is the most heavily armored helmet in active deployment across Straeax military branches.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -199,7 +199,7 @@
 	<!-- Headgear 4 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_SeekerHelmet</defName>
-		<label>Xireth Precision</label>
+		<label>Xireth Precision Helmet</label>
 		<description>(Placeholder) The Xireth-Seeker class-Precsion helmet is a highly advanced helmet with an enhanced visor that shows projectile trajectory and possible shot paths ..</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
