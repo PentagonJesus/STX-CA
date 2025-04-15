@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>Straeax_Secrets</defName>
+		<label>Secrets of the Straeax Empire</label>
+		<description>The knowledge behind gathering raw Voltherium is a heavily guarded secret.... one you just got your hands on.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>1</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire</li>
+
+				<li>subject_story->studied straeax empire history and armaments</li>
+				<li>subject_story->researched a new mechanism for making thermal ammo</li>
+				<li>subject_story->analyzed weapon and armor blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->utilising thermal ammo</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>Voltherium_Forming</defName>
+		<label>Voltherium hex tube forming</label>
+		<description>Create the Straeax Empires most guarded secret the Voltherium hex tubes.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>8000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>StraeaxSecrets</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->Voltherium hex tube forming</li>
+
+				<li>subject_story->studied straeax empire secrets of the Voltherium hex tubes</li>
+				<li>subject_story->learned how to make Voltherium hex tubes</li>
+				<li>subject_story->analyzed Voltherium hex blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->creating Voltherium hex tubes</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>StraeaxArmory</defName>
+		<label>straeax armory</label>
+		<description>The bulk of the Straeax Empires designs for combat armor and weaponry.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>12000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>VoltheriumForming</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4</researchViewX>
+		<researchViewY>4</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire</li>
+
+				<li>subject_story->studied straeax empire history and armaments</li>
+				<li>subject_story->researched a new mechanism for making thermal ammo</li>
+				<li>subject_story->analyzed weapon and armor blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->utilising thermal ammo</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>AdvancedStraeax</defName>
+		<label>Advanced Straeax Armory</label>
+		<description>Learn the secrets of the Straeax Empires designs for advanced weaponry and armor platforms.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>20000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>StraeaxArmory</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire rail guns</li>
+
+				<li>subject_story->researched the technology behind the rail guns</li>
+				<li>subject_story->analyzed rail gun blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->setting up magnetic coils</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- <ResearchProjectDef>
+		<defName>StraeaxRailGun</defName>
+		<label>straeax rail gun</label>
+		<description>Build a powerful rail gun.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>StraeaxArmory</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire rail guns</li>
+
+				<li>subject_story->researched the technology behind the rail guns</li>
+				<li>subject_story->analyzed rail gun blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->setting up magnetic coils</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>StraeaxRailGun</defName>
+		<label>straeax rail gun</label>
+		<description>Build a powerful rail gun.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>StraeaxArmory</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire rail guns</li>
+
+				<li>subject_story->researched the technology behind the rail guns</li>
+				<li>subject_story->analyzed rail gun blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->setting up magnetic coils</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef> -->
+
+	<!-- fdsj 
+	
+	<ResearchProjectDef>
+		<defName>StraeaxArmory</defName>
+		<label>straeax armory</label>
+		<description>Build weapons and armors used by the Straeax Empire.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>StraeaxSecrets</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire</li>
+
+				<li>subject_story->studied straeax empire history and armaments</li>
+				<li>subject_story->researched a new mechanism for making thermal ammo</li>
+				<li>subject_story->analyzed weapon and armor blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->utilising thermal ammo</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>StraeaxRailGun</defName>
+		<label>straeax rail gun</label>
+		<description>Build a powerful rail gun.</description>
+		<tab>StraeaxResearchTab</tab>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>StraeaxArmory</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->straeax empire rail guns</li>
+
+				<li>subject_story->researched the technology behind the rail guns</li>
+				<li>subject_story->analyzed rail gun blueprints</li>
+
+				<li>subject_gerund->analyzing blueprints</li>
+
+				<li>subject_gerund->setting up magnetic coils</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef> -->
+</Defs>
