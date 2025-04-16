@@ -3,34 +3,38 @@
 	<!-- crusader division -->
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase">
 		<defName>SF_CrusaderDivision</defName>
-		<label>501st Crusader Division armor</label>
-		<shortDescription>This Warcasket is only entrusted to warriors who dedicate their whole lives to the emperor and the empire.</shortDescription>
-		<description>This Warcasket is only entrusted to warriors who dedicate their whole lives to the emperor and the empire.  With a powerful jet pack and nearly impenetrable armor that few things can pierce, many have come to fear the sight of this armor.  While this armor is a rare sight it is most commonly issued to troops on key worlds or on the frontlines of very important battles.</description>
+		<label>Netherion Shell</label>
+		<shortDescription>A walking fortress only given to those that have dedicated their life to the Empire. There is no return.</shortDescription>
+		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Warcasketlike/HiggsCasket</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>75</Mass>
-			<ArmorRating_Sharp>1.56</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.78</ArmorRating_Heat>
-			<Insulation_Cold>100</Insulation_Cold>
-			<Insulation_Heat>14</Insulation_Heat>
+			<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Cold>160</Insulation_Cold>
+			<Insulation_Heat>126</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<VEF_MassCarryCapacity>125</VEF_MassCarryCapacity>
 			<MoveSpeed>0.60</MoveSpeed>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
+			<ToxicResistance>0.75</ToxicResistance>
+			<WorkSpeedGlobal>0.02</WorkSpeedGlobal>
+			<AimingDelayFactor>-0.5</AimingDelayFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.0</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentSpacer>8</ComponentSpacer>
-			<Plasteel>300</Plasteel>
-			<DevilstrandCloth>120</DevilstrandCloth>
-			<Uranium>50</Uranium>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
+			<Plasteel>200</Plasteel>
+			<DevilstrandCloth>100</DevilstrandCloth>
+			<Uranium>30</Uranium>
 		</costList>
 		<researchPrerequisites>
-			<li>VFEP_SpacerWarcaskets</li>
+			<li>AdvancedStraeax</li>
 		</researchPrerequisites>
 		<apparel>
 			<bodyPartGroups>
@@ -73,33 +77,34 @@
 	</VFEPirates.WarcasketDef>
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketShoulderPadBase">
 		<defName>SF_CrusaderDivisionShoulders</defName>
-		<label>501st Crusader Division shoulders</label>
-		<shortDescription>This Warcasket is only entrusted to warriors who dedicate their whole lives to the emperor and the empire.  With a powerful jet pack and nearly impenetrable armor that few things can pierce, many have come to fear the sight of this armor.  While this armor is a rare sight it is most commonly issued to troops on key worlds or on the frontlines of very important battles.</shortDescription>
-		<description>This Warcasket is only entrusted to warriors who dedicate their whole lives to the emperor and the empire.  With a powerful jet pack and nearly impenetrable armor that few things can pierce, many have come to fear the sight of this armor.  While this armor is a rare sight it is most commonly issued to troops on key worlds or on the frontlines of very important battles.</description>
+		<label>Netherion Shoulders</label>
+		<shortDescription>A walking fortress only given to those that have dedicated their life to the Empire. There is no return.</shortDescription>
+		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Warcasketlike/HiggsCasketShoulder</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>35</Mass>
-			<ArmorRating_Sharp>1.56</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.78</ArmorRating_Heat>
-			<Insulation_Cold>18</Insulation_Cold>
-			<Insulation_Heat>6</Insulation_Heat>
+			<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Cold>32</Insulation_Cold>
+			<Insulation_Heat>24</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.60</MoveSpeed>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</SlaveSuppressionOffset>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.0</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentSpacer>8</ComponentSpacer>
-			<Plasteel>120</Plasteel>
-			<DevilstrandCloth>100</DevilstrandCloth>
-			<Uranium>40</Uranium>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>2</VoltheriumHexTubes>
+			<Plasteel>80</Plasteel>
+			<DevilstrandCloth>60</DevilstrandCloth>
+			<Uranium>32</Uranium>
 		</costList>
 		<researchPrerequisites>
-			<li>VFEP_SpacerWarcaskets</li>
+			<li>AdvancedStraeax</li>
 		</researchPrerequisites>
 		<apparel>
 			<bodyPartGroups>
@@ -123,34 +128,36 @@
 	</VFEPirates.WarcasketDef>
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketHelmetBase">
 		<defName>SF_CrusaderDivisionHelmet</defName>
-		<label>501st Crusader Division helmet</label>
-		<shortDescription>This Warcasket is only entrusted to warriors who dedicate their whole lives to the emperor and the empire.  With a powerful jet pack and nearly impenetrable armor that few things can pierce, many have come to fear the sight of this armor.  While this armor is a rare sight it is most commonly issued to troops on key worlds or on the frontlines of very important battles.</shortDescription>
-		<description>This Warcasket is only entrusted to warriors who dedicate their whole lives to the emperor and the empire.  With a powerful jet pack and nearly impenetrable armor that few things can pierce, many have come to fear the sight of this armor.  While this armor is a rare sight it is most commonly issued to troops on key worlds or on the frontlines of very important battles.</description>
+		<label>Netherion Helmet</label>
+		<shortDescription>A walking fortress only given to those that have dedicated their life to the Empire. There is no return.</shortDescription>
+		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Warcasketlike/HiggsWarcasketHelmet</texPath>
 		</graphicData>
 		<uiIconScale>1.25</uiIconScale>
 		<statBases>
 			<Mass>8</Mass>
-			<ArmorRating_Sharp>1.56</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.78</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Cold>16</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.15</MoveSpeed>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>  
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<costList>
-			<Uranium>20</Uranium>
-			<ComponentSpacer>6</ComponentSpacer>
-			<DevilstrandCloth>80</DevilstrandCloth>
-			<Plasteel>120</Plasteel>
+			<Uranium>32</Uranium>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<DevilstrandCloth>60</DevilstrandCloth>
+			<Plasteel>80</Plasteel>
 		</costList>
 		<researchPrerequisites>
-			<li>VFEP_SpacerWarcaskets</li>
+			<li>AdvancedStraeax</li>
 		</researchPrerequisites>
 		<apparel>
 			<bodyPartGroups>
