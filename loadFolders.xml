@@ -2,12 +2,21 @@
 
 <loadFolders>
 	<v1.5>
-		<li>/</li>
     <li>1.5</li>
+	<li>/</li>
     <li>1.5/Defs</li>
 		<li IfModActive="CETeam.CombatExtended">1.5/Compatabilities/CE</li>
    		<li IfModActive="kentington.saveourship2">1.5/Compatabilities/SOS2</li>
 		<li IfModActive="oskarpotocki.vfe.pirates">1.5/Compatabilities/Pirates</li>
 		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.5/Compatabilities/VEF</li>
 	</v1.5>
+	<v1.6>
+    <li>1.6</li>
+	<li>/</li>
+    <li>1.6/Defs</li>
+		<li IfModActive="CETeam.CombatExtended">1.6/Compatabilities/CE</li>
+   		<li IfModActive="kentington.saveourship2">1.6/Compatabilities/SOS2</li>
+		<li IfModActive="oskarpotocki.vfe.pirates">1.6/Compatabilities/Pirates</li>
+		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/Compatabilities/VEF</li>
+	</v1.6>
 </loadFolders>

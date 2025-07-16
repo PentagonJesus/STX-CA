@@ -55,6 +55,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -120,6 +121,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -185,6 +187,7 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<PsychicSensitivity>-0.2</PsychicSensitivity>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
@@ -251,6 +254,7 @@
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
