@@ -70,8 +70,6 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionHelmet"]/equippedStatOffsets</xpath>
 					<value>
-						<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
-						<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 						<SmokeSensitivity>-1</SmokeSensitivity>
 					</value>
 				</li>
@@ -87,10 +85,50 @@
 						<ArmorRating_Blunt>132</ArmorRating_Blunt>
 					</value>
 				</li>
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>WarcasketGun_Naphtha</defName>
+					<statBases>
+						<SightsEfficiency>1.1</SightsEfficiency>
+						<ShotSpread>0.08</ShotSpread>
+						<SwayFactor>1.68</SwayFactor>
+						<Bulk>36.00</Bulk>
+						<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
+					</statBases>
+					<Properties>
+						<recoilAmount>0.77</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_HeavyThermalBolt</defaultProjectile>
+						<warmupTime>5</warmupTime>
+						<range>70</range>
+						<burstShotCount>50</burstShotCount>
+						<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+						<soundCast>ChargeLance_Fire</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<recoilPattern>Mounted</recoilPattern>
+					</Properties>
+					<AmmoUser>
+						<magazineSize>500</magazineSize>
+						<reloadTime>8</reloadTime>
+						<ammoSet>AmmoSet_HeavyThermalBolts</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aimedBurstShotCount>25</aimedBurstShotCount>
+						<aiAimMode>Snapshot</aiAimMode>
+					</FireModes>
+					<weaponTags>
+						<li>CE_MachineGun</li>
+						<li>CE_AI_Suppressive</li>
+						<li>AdvancedGun</li>
+					</weaponTags>
+				</li>
 			</operations>
 		</match>
 	</Operation>
-
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<!--Unerforscht Commando -->
@@ -184,8 +222,6 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/equippedStatOffsets</xpath>
 				<value>
-					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<SmokeSensitivity>-1</SmokeSensitivity>
 				</value>
 			</li>

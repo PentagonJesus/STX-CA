@@ -126,7 +126,6 @@
 					<CarryWeight>80</CarryWeight>
 					<CarryBulk>20</CarryBulk>
 					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.3</Suppressability>
 				</value>
 			</li>
@@ -163,7 +162,6 @@
 					<CarryWeight>120</CarryWeight>
 					<CarryBulk>40</CarryBulk>
 					<ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<MoveSpeed>0.2</MoveSpeed>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.3</Suppressability>
 				</value>
@@ -185,13 +183,13 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>36</ArmorRating_Sharp>
+					<ArmorRating_Sharp>40</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>64</ArmorRating_Blunt>
+					<ArmorRating_Blunt>72</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -200,7 +198,6 @@
 					<CarryWeight>160</CarryWeight>
 					<CarryBulk>50</CarryBulk>
 					<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.3</Suppressability>
 				</value>
 			</li>
@@ -246,7 +243,6 @@
 					<CarryWeight>55</CarryWeight>
 					<CarryBulk>10</CarryBulk>
 					<ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.2</Suppressability>
 				</value>
 			</li>
@@ -352,7 +348,6 @@
 				<value>
 					<AimingAccuracy>0.15</AimingAccuracy>
 					<SmokeSensitivity>-1</SmokeSensitivity>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.15</Suppressability>
 				</value>
 			</li>
@@ -368,13 +363,13 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
-					<ArmorRating_Sharp>30</ArmorRating_Sharp>
+					<ArmorRating_Sharp>34</ArmorRating_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/ArmorRating_Blunt</xpath>
 				<value>
-					<ArmorRating_Blunt>54</ArmorRating_Blunt>
+					<ArmorRating_Blunt>64</ArmorRating_Blunt>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -393,7 +388,6 @@
 				<value>
 					<AimingAccuracy>0.1</AimingAccuracy>
 					<SmokeSensitivity>-1</SmokeSensitivity>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
 				</value>
 			</li>
@@ -434,7 +428,6 @@
 				<value>
 					<AimingAccuracy>0.7</AimingAccuracy>
 					<SmokeSensitivity>-1</SmokeSensitivity>
-					<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 					<Suppressability MayRequire="CETeam.CombatExtended">-0.1</Suppressability>
 				</value>
 			</li>

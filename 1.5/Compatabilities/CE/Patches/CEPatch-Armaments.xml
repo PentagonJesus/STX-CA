@@ -12,15 +12,13 @@
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>0.9</SwayFactor>
       <Bulk>1.5</Bulk>
-      <!-- <ToughnessRating>2.5</ToughnessRating> -->
-      <!-- Base toughness rating of a weapon -->
       <WorkToMake>50000</WorkToMake>
     </statBases>
     <Properties>
       <recoilAmount>1.5</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
+      <defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
       <warmupTime>0.1</warmupTime>
       <range>24</range>
       <soundCast>Shot_ChargeRifle</soundCast>
@@ -30,7 +28,7 @@
     <AmmoUser>
       <magazineSize>15</magazineSize>
       <reloadTime>2</reloadTime>
-      <ammoSet>AmmoSet_ThermalBolts</ammoSet>
+      <ammoSet>AmmoSet_LightThermalBolts</ammoSet>
     </AmmoUser>
     <FireModes>
       <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -60,91 +58,86 @@
     </value>
   </Operation>
 
-  <!--Skotadi-->
+	<!--Skelion Varnex-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Gun_SkelionVarnex</defName>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.4</SightsEfficiency>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>1.1</SwayFactor>
+			<Bulk>9.5</Bulk>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
+			<warmupTime>0.75</warmupTime>
+			<range>58</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>3.4</reloadTime>
+			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_SkelionVarnex"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.40,1.40</DrawSize>
+				<DrawOffset>0.08,0.0</DrawOffset>
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_SkelionVarnex"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.1</AimingAccuracy>
+		</value>
+	</Operation>
 	
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_Skotadi</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.4</SightsEfficiency>
-      <ShotSpread>0.08</ShotSpread>
-      <SwayFactor>1</SwayFactor>
-      <Bulk>9.5</Bulk>
-      <!-- <ToughnessRating>2.5</ToughnessRating> -->
-      <!-- Base toughness rating of a weapon -->
-      <WorkToMake>50000</WorkToMake>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.5</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
-      <warmupTime>0.75</warmupTime>
-      <range>66</range>
-      <burstShotCount>6</burstShotCount>
-      <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-      <soundCast>Shot_ChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>30</magazineSize>
-      <reloadTime>3.4</reloadTime>
-      <ammoSet>AmmoSet_ThermalBolts</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aimedBurstShotCount>3</aimedBurstShotCount>
-      <aiUseBurstMode>TRUE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CE_AI_AR</li>
-      <li>AdvancedGun</li>
-    </weaponTags>
-  </Operation>
-
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Skotadi"]</xpath>
-    <value>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.40,1.40</DrawSize>
-        <DrawOffset>0.08,0.0</DrawOffset>
-        <CasingOffset>-0.05,0</CasingOffset>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Gun_Skotadi"]/equippedStatOffsets</xpath>
-    <value>
-      <AimingAccuracy>0.1</AimingAccuracy>
-    </value>
-  </Operation>
-
-  <!--Corvus-->
+	<!--Corvus-->
 	
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_Corvus</defName>
     <statBases>
       <Mass>3</Mass>
-      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.18</RangedWeapon_Cooldown>
       <SightsEfficiency>1.2</SightsEfficiency>
-      <ShotSpread>0.04</ShotSpread>
-      <SwayFactor>0.64</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>0.75</SwayFactor>
       <Bulk>9.5</Bulk>
-      <!-- <ToughnessRating>2.5</ToughnessRating> -->
-      <!-- Base toughness rating of a weapon -->
       <WorkToMake>50000</WorkToMake>
     </statBases>
     <Properties>
       <recoilAmount>1.5</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
-      <warmupTime>0.55</warmupTime>
+      <defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
+      <warmupTime>0.45</warmupTime>
       <range>36</range>
-      <burstShotCount>8</burstShotCount>
-      <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+      <burstShotCount>6</burstShotCount>
+      <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
       <soundCast>Shot_ChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -152,7 +145,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>2.6</reloadTime>
-      <ammoSet>AmmoSet_ThermalBolts</ammoSet>
+      <ammoSet>AmmoSet_LightThermalBolts</ammoSet>
     </AmmoUser>
     <FireModes>
       <aimedBurstShotCount>4</aimedBurstShotCount>
@@ -164,7 +157,6 @@
       <li>AdvancedGun</li>
     </weaponTags>
   </Operation>
-
   <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="Gun_Corvus"]</xpath>
     <value>
@@ -220,7 +212,6 @@
       <li>AdvancedGun</li>
     </weaponTags>
   </Operation>
-
   <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="Gun_Apokries"]</xpath>
     <value>
@@ -239,7 +230,7 @@
     </value>
   </Operation>
 
-  <!-- Diatrypo -->
+	<!-- Diatrypo -->
 
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_Diatrypo</defName>
@@ -255,9 +246,9 @@
       <recoilAmount>1.7</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_MagnetizedThermalRounds</defaultProjectile>
+      <defaultProjectile>Bullet_VulcanBolts</defaultProjectile>
       <warmupTime>4.2</warmupTime>
-      <range>80</range>
+      <range>120</range>
       <soundCast>ChargeLance_Fire</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -265,7 +256,7 @@
     <AmmoUser>
       <magazineSize>3</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_MagnetizedThermalRounds</ammoSet>
+      <ammoSet>AmmoSet_VulcanBolts</ammoSet>
     </AmmoUser>
     <FireModes>
       <aiAimMode>AimedShot</aiAimMode>
@@ -276,7 +267,6 @@
       <li>Bipod_DMR</li>
     </weaponTags>
   </Operation>
-
 <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="Gun_Diatrypo"]</xpath>
     <value>
@@ -287,7 +277,6 @@
       </li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Gun_Diatrypo"]/tools</xpath>
     <value>
@@ -311,7 +300,10 @@
   <!--Side arms-->
   <Operation Class="PatchOperationReplace">
     <xpath>
-      Defs/ThingDef[defName="Gun_ChazosLThree"]/tools<!--or-->
+      Defs/ThingDef[defName="Gun_ChazosLThree" or
+	  defname="Gun_ChazosLFive" or
+	  defname="Gun_Eidon"
+	  ]/tools
     </xpath>
     <value>
       <tools>
@@ -344,9 +336,12 @@
 
   <Operation Class="PatchOperationReplace">
     <xpath>
-      Defs/ThingDef[defName="Gun_Skotadi" or
+      Defs/ThingDef[defName="Gun_SkelionVarnex" or
       defname="Gun_Corvus" or
-      defname="Gun_Apokries"
+      defname="Gun_Apokries" or
+	  defname="Gun_SkelionAvix" or 
+	  defname="Gun_Helios" or
+	  defname="Gun_Hekarion"
       ]/tools
     </xpath>
     <value>
