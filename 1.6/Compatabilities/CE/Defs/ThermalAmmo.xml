@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Thermal</defName>
+		<label>Thermal</label>
+		<description>The thermal charged particle coating blasts against armor and spreads doing more damage to unarmored enemies compared to armored and coats the target in prometheum.</description>
+	</CombatExtended.AmmoCategoryDef>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>ThermalAP</defName>
+		<label>super heated thermal</label>
+		<labelShort>SH</labelShort>
+		<description>Super heated thermal charged particle that melts through armor at a devastating rate at the cost of it spreading to multiple limbs and melting more tissue.</description>
+	</CombatExtended.AmmoCategoryDef>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Slag</defName>
+		<label>Slag</label>
+		<description>The thermal charged particle coating blasts against armor and spreads doing more damage to unarmored enemies compared to armored and coats the target in prometheum.</description>
+	</CombatExtended.AmmoCategoryDef>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>SlagAP</defName>
+		<label>super heated Slag</label>
+		<labelShort>SH</labelShort>
+		<description>Super heated thermal charged particle that melts through armor at a devastating rate at the cost of it spreading to multiple limbs and melting more tissue.</description>
+	</CombatExtended.AmmoCategoryDef>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>VulcanThermal</defName>
+		<label>Vulcans</label>
+		<description>An extremely hot bolt meant for use in specialized weapon platforms.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<!-- ==================== Ammo Thing Categories ==================== -->
+
+	<ThingCategoryDef>
+		<defName>AmmoThermalBolts</defName>
+		<label>Thermal Bolts</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaSmall</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AmmoLightThermalBolts</defName>
+		<label>Light Thermal Bolts</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaMedium</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AmmoHeavyThermalBolts</defName>
+		<label>Heavy Thermal Bolts</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaLarge</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AmmoSlagRounds</defName>
+		<label>Slag Rounds</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaSmall</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AmmoVulcanBolts</defName>
+		<label>Vulcan Bolts</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRailgunHighCaliber</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSets ==================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_ThermalBolts</defName>
+		<label>Thermal Bolts</label>
+		<ammoTypes>
+			<Ammo_ThermalBolts>Bullet_ThermalBolt</Ammo_ThermalBolts>
+			<Ammo_ThermalBolts_AP>Bullet_ThermalBolt_AP</Ammo_ThermalBolts_AP>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedPistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_LightThermalBolts</defName>
+		<label>Light Thermal Bolts</label>
+		<ammoTypes>
+			<Ammo_LightThermalBolts>Bullet_LightThermalBolt</Ammo_LightThermalBolts>
+			<Ammo_LightThermalBolts_AP>Bullet_LightThermalBolt_AP</Ammo_LightThermalBolts_AP>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedPistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_HeavyThermalBolts</defName> 
+		<label>Heavy Thermal Bolts</label>
+		<ammoTypes>
+			<Ammo_HeavyThermalBolts>Bullet_HeavyThermalBolt</Ammo_HeavyThermalBolts>
+			<Ammo_HeavyThermalBolts_AP>Bullet_HeavyThermalBolt_AP</Ammo_HeavyThermalBolts_AP>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedPistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_SlagRounds</defName>
+		<label>Slag Rounds</label>
+		<ammoTypes>
+			<Ammo_SlagRounds>Bullet_SlagRound</Ammo_SlagRounds>
+			<Ammo_SlagRounds_AP>Bullet_SlagRound_AP</Ammo_SlagRounds_AP>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedPistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_VulcanBolts</defName>
+		<label>Vulcan Bolts</label>
+		<ammoTypes>
+			<Ammo_VulcanBolts>Bullet_VulcanBolts</Ammo_VulcanBolts>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedPistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ==================== -->
+
+	<!--  Thermal Bolts -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="ThermalBoltsBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>Thermal bolt ammo used by weapons of Straeax Empire.</description>
+		<statBases>
+			<Mass>0.027</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoThermalBolts</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ThermalBoltsBase">
+		<defName>Ammo_ThermalBolts</defName>
+		<label>Thermal Bolts</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>Thermal</ammoClass>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ThermalBoltsBase">
+		<defName>Ammo_ThermalBolts_AP</defName>
+		<label>Thermal Bolts (SH)</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>ThermalAP</ammoClass>
+	</ThingDef>
+	<!-- Light Thermal Bolts -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="LightThermalBoltsBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>Thermal bolts used by small arms in the Straeax Empire.</description>
+		<statBases>
+			<Mass>0.027</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoLightThermalBolts</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="LightThermalBoltsBase">
+		<defName>Ammo_LightThermalBolts</defName>
+		<label>Light Thermal Bolts</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>Thermal</ammoClass>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="LightThermalBoltsBase">
+		<defName>Ammo_LightThermalBolts_AP</defName>
+		<label>Light Thermal Bolts (SH)</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>ThermalAP</ammoClass>
+	</ThingDef>
+	<!-- Heavy Thermal Bolts -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="HeavyThermalBoltsBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>Thermal bolt ammo used by weapons of Straeax Empire.</description>
+		<statBases>
+			<Mass>0.027</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoHeavyThermalBolts</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyThermalBoltsBase">
+		<defName>Ammo_HeavyThermalBolts</defName>
+		<label>Heavy Thermal Bolts</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>Thermal</ammoClass>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyThermalBoltsBase">
+		<defName>Ammo_HeavyThermalBolts_AP</defName>
+		<label>Heavy Thermal Bolts (SH)</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ammoClass>ThermalAP</ammoClass>
+	</ThingDef>
+	<!-- Slag Rounds -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="SlagRoundsBase" ParentName="SpacerAmmoBase" Abstract="True">
+		<description>Melted metal meant to shred through targets skin and coat them in prometheum.</description>
+		<statBases>
+			<Mass>0.047</Mass>
+			<Bulk>0.08</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoSlagRounds</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SlagRoundsBase">
+		<defName>Ammo_SlagRounds</defName>
+		<label>Slag Rounds</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Pistol</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.1</MarketValue>
+		</statBases>
+		<ammoClass>Slag</ammoClass>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SlagRoundsBase">
+		<defName>Ammo_SlagRounds_AP</defName>
+		<label>Slag Rounds (SH Condensed)</label>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell/Pistol</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.1</MarketValue>
+		</statBases>
+		<ammoClass>SlagAP</ammoClass>
+	</ThingDef>
+	<!-- Vulcan Bolts -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="VulcanThermalBoltsBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+		<description>An extremely hot bolt meant for use in specialized weapon platforms.</description>
+		<statBases>
+			<Mass>0.027</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoVulcanBolts</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="VulcanThermalBoltsBase">
+		<defName>Ammo_VulcanBolts</defName>
+		<label>Vulcan Bolts</label>
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/HighCaliber</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.4</MarketValue>
+		</statBases>
+		<ammoClass>VulcanThermal</ammoClass>
+	</ThingDef>
+
+	<!-- ==================== Projectiles ==================== -->
+
+	<!-- Thermal Bolts -->
+	<ThingDef Name="BaseThermalBoltBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_ThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>175</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseThermalBoltBullet">
+		<defName>Bullet_ThermalBolt</defName>
+		<label> Thermal Bolt</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>20</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>3</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>30</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseThermalBoltBullet">
+		<defName>Bullet_ThermalBolt_AP</defName>
+		<label> Thermal Bolt (SH)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>18</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>4</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>48</armorPenetrationSharp>
+			<armorPenetrationBlunt>37</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<!-- Light Thermal Bolts -->
+	<ThingDef Name="BaseLightThermalBoltBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_LightThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>160</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseLightThermalBoltBullet">
+		<defName>Bullet_LightThermalBolt</defName>
+		<label>Light Thermal Bolt</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>12</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>3</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<armorPenetrationBlunt>18</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseLightThermalBoltBullet">
+		<defName>Bullet_LightThermalBolt_AP</defName>
+		<label>Light Thermal Bolt (SH)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>4</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<!--Heavy Thermal Bolts -->
+	<ThingDef Name="BaseHeavyThermalBoltBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_HeavyThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHeavyThermalBoltBullet">
+		<defName>Bullet_HeavyThermalBolt</defName>
+		<label>Heavy Thermal Bolt</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>32</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>2</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>36</armorPenetrationSharp>
+			<armorPenetrationBlunt>48</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHeavyThermalBoltBullet">
+		<defName>Bullet_HeavyThermalBolt_AP</defName>
+		<label>Heavy Thermal Bolt (SH)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>26</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>4</amount>
+					<chance>0.4</chance>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>72</armorPenetrationSharp>
+			<armorPenetrationBlunt>54</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<!-- Slag Rounds -->
+	<ThingDef Name="BaseSlagRoundBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_SlagRounds</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>125</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseSlagRoundBullet">
+		<defName>Bullet_SlagRound</defName>
+		<label>Slag Round</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>14</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Burn</def>
+					<amount>3</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>45</armorPenetrationBlunt>
+			<pelletCount>12</pelletCount>
+			<spreadMult>8.9</spreadMult>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseSlagRoundBullet">
+		<defName>Bullet_SlagRound_AP</defName>
+		<label>Slag Round (SH Condensed)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_LightThermalBolt</texPath>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>36</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Burn</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<armorPenetrationBlunt>115</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	<!-- Vulcan Bolts -->
+	<ThingDef Name="BaseVulcanBolt" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_VulcanBolts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.20,1.20)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>446</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseVulcanBolt">
+		<defName>Bullet_VulcanBolts</defName>
+		<label>Vulcan Bolts</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>24</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Vaporize</def>
+					<amount>50</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>1364</armorPenetrationSharp>
+			<armorPenetrationBlunt>786</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ==================== -->
+
+	<!-- Thermal Bolts -->
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_ThermalBolts</defName>
+		<label>make  Thermal Bolt cartridges x500</label>
+		<description>Craft 500 Thermal Bolts cartridges.</description>
+		<jobString>Making Thermal Bolts cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ThermalBolts>500</Ammo_ThermalBolts>
+		</products>
+		<workAmount>16000</workAmount>
+	</RecipeDef>
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_ThermalBolts_AP</defName>
+		<label>make  Thermal Bolt (SH) cartridges x500</label>
+		<description>Craft 500  Thermal Bolt (SH) cartridges.</description>
+		<jobString>Making  Thermal Bolt (SH) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ThermalBolts_AP>500</Ammo_ThermalBolts_AP>
+		</products>
+		<workAmount>17000</workAmount>
+	</RecipeDef>
+	<!-- Light Thermal Bolts -->
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_LightThermalBolts</defName>
+		<label>make Light Thermal Bolt cartridges x500</label>
+		<description>Craft 500 Light Thermal Bolt cartridges.</description>
+		<jobString>Making Light Thermal Bolt cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_LightThermalBolts>500</Ammo_LightThermalBolts>
+		</products>
+		<workAmount>16000</workAmount>
+	</RecipeDef>
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_LightThermalBolts_AP</defName>
+		<label>make Light Thermal Bolt (SH) cartridges x500</label>
+		<description>Craft 500 Light Thermal Bolt (SH) cartridges.</description>
+		<jobString>Making Light Thermal Bolt (SH) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_LightThermalBolts_AP>500</Ammo_LightThermalBolts_AP>
+		</products>
+		<workAmount>17000</workAmount>
+	</RecipeDef>
+	<!-- Heavy Thermal Bolts -->
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_HeavyThermalBolts</defName>
+		<label>make Thermal Bolts cartridge x500</label>
+		<description>Craft 500 Thermal Bolts cartridges.</description>
+		<jobString>Making Thermal Bolts cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_HeavyThermalBolts>500</Ammo_HeavyThermalBolts>
+		</products>
+		<workAmount>16000</workAmount>
+	</RecipeDef>
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_HeavyThermalBolts_AP</defName>
+		<label>make Heavy Thermal Bolt (SH) cartridges x500</label>
+		<description>Craft 500 Heavy Thermal Bolt (SH) cartridges.</description>
+		<jobString>Making Heavy Thermal Bolt (SH) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_HeavyThermalBolts_AP>500</Ammo_HeavyThermalBolts_AP>
+		</products>
+		<workAmount>17000</workAmount>
+	</RecipeDef>
+	<!-- Slag Rounds -->
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_SlagRounds</defName>
+		<label>make Slag Rounds cartridge x500</label>
+		<description>Craft 500 Slag Rounds cartridges.</description>
+		<jobString>Making Slag Rounds cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_SlagRounds>500</Ammo_SlagRounds>
+		</products>
+		<workAmount>8000</workAmount>
+	</RecipeDef>
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_SlagRounds_AP</defName>
+		<label>make Slag Rounds (SH Condensed) cartridge x500</label>
+		<description>Craft 500 Slag Rounds (SH Condensed) cartridges.</description>
+		<jobString>Making Slag Rounds (SH Condensed) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_SlagRounds_AP>500</Ammo_SlagRounds_AP>
+		</products>
+		<workAmount>9500</workAmount>
+	</RecipeDef>
+	<!-- Vulcan Bolts -->
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_VulcanBolts</defName>
+		<label>make Vulcan Bolt boxes x20</label>
+		<description>Craft 20 Vulcan Bolt boxes.</description>
+		<jobString>Making Vulcan Bolt Boxes.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_VulcanBolts>20</Ammo_VulcanBolts>
+		</products>
+		<workAmount>16000</workAmount>
+	</RecipeDef>
+</Defs>

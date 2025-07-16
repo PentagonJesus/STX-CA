@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- crusader division -->
+	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase">
+		<defName>SF_CrusaderDivision</defName>
+		<label>Netherion Shell</label>
+		<shortDescription>A walking fortress only given to those that have dedicated their lives to the Empire. There is no return.</shortDescription>
+		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Warcasketlike/HiggsCasket</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>75</Mass>
+			<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Cold>160</Insulation_Cold>
+			<Insulation_Heat>126</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<VEF_MassCarryCapacity>125</VEF_MassCarryCapacity>
+			<MoveSpeed>0.60</MoveSpeed>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.5</AimingDelayFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.0</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
+			<Plasteel>200</Plasteel>
+			<DevilstrandCloth>100</DevilstrandCloth>
+			<Uranium>30</Uranium>
+		</costList>
+		<researchPrerequisites>
+			<li>AdvancedStraeax</li>
+		</researchPrerequisites>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Warcasketlike/HiggsCasket</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>WarcasketHeavy</li>
+				<li>WarcasketCata</li>
+				<li>WarcasketAll</li>
+			</tags>
+		</apparel>
+		<modExtensions>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<traitsOnEquip>
+					<li>VFEP_WarcasketTrait</li>
+				</traitsOnEquip>
+				<traitsOnUnequip>
+					<li>VFEP_Shellcasket</li>
+				</traitsOnUnequip>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+		</modExtensions>
+	</VFEPirates.WarcasketDef>
+	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketShoulderPadBase">
+		<defName>SF_CrusaderDivisionShoulders</defName>
+		<label>Netherion Shoulders</label>
+		<shortDescription>A walking fortress only given to those that have dedicated their lives to the Empire. There is no return.</shortDescription>
+		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Warcasketlike/HiggsCasketShoulder</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>35</Mass>
+			<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Cold>32</Insulation_Cold>
+			<Insulation_Heat>24</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<MoveSpeed>0.60</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.0</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>2</VoltheriumHexTubes>
+			<Plasteel>80</Plasteel>
+			<DevilstrandCloth>60</DevilstrandCloth>
+			<Uranium>32</Uranium>
+		</costList>
+		<researchPrerequisites>
+			<li>AdvancedStraeax</li>
+		</researchPrerequisites>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Warcasketlike/HiggsCasketShoulder</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>WarcasketHeavy</li>
+				<li>WarcasketCata</li>
+				<li>WarcasketAll</li>
+			</tags>
+		</apparel>
+	</VFEPirates.WarcasketDef>
+	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketHelmetBase">
+		<defName>SF_CrusaderDivisionHelmet</defName>
+		<label>Netherion Helmet</label>
+		<shortDescription>A walking fortress only given to those that have dedicated their lives to the Empire. There is no return.</shortDescription>
+		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Warcasketlike/HiggsWarcasketHelmet</texPath>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<statBases>
+			<Mass>8</Mass>
+			<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Cold>16</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>  
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<costList>
+			<Uranium>32</Uranium>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<DevilstrandCloth>60</DevilstrandCloth>
+			<Plasteel>80</Plasteel>
+		</costList>
+		<researchPrerequisites>
+			<li>AdvancedStraeax</li>
+		</researchPrerequisites>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Warcasketlike/HiggsWarcasketHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>WarcasketHeavy</li>
+				<li>WarcasketCata</li>
+				<li>WarcasketAll</li>
+			</tags>
+		</apparel>
+	</VFEPirates.WarcasketDef>
+</Defs>

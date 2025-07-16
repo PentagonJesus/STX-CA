@@ -1,0 +1,175 @@
+<Defs>
+	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+		<defName>SF_UnerforschtCommandoHelmet</defName>
+		<label>Stygian Riftcutter Helmet</label>
+		<description>(Placeholder) The Stygian Riftcutter is a close kept secret to the Straeax Empire, just like its sister the *REDACTED* in which uses the *REDACTED* system. The Styigan Riftcutter main use is decimation of forces with minimal resistance, its Rift Cutter Core allows for essentially teleporting through the quantum realm, read blacksite file Nova.V82 for more info.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>AdvancedStraeax</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>21000</WorkToMake>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>80</Plasteel>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
+			<DevilstrandCloth>20</DevilstrandCloth>
+			<Uranium>10</Uranium>
+		</costList>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1.0</SlaveSuppressionOffset>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<graphicData>
+			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</wornGraphicPath>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+		</apparel>
+		<colorGenerator Inherit="False" IsNull="True"/>
+	</ThingDef>
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>SF_UnerforschtCommandoArmor</defName>
+		<label>Stygian Riftcutter Armor</label>
+		<description>(Placeholder) The Stygian Riftcutter is a close kept secret to the Straeax Empire, just like its sister the *REDACTED* in which uses the *REDACTED* system. The Styigan Riftcutter main use is decimation of forces with minimal resistance, its Rift Cutter Core allows for essentially teleporting through the quantum realm, read blacksite file Nova.V82 for more info.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>AdvancedStraeax</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>440</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>6</VoltheriumHexTubes>
+			<Plasteel>200</Plasteel>
+			<DevilstrandCloth>60</DevilstrandCloth>
+			<Uranium>20</Uranium>
+		</costList>
+		<comps>
+			<li Class="VEF.Abilities.CompProperties_AbilitiesApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<abilities>
+					<li>Ability_QuantumTeleport</li>
+				</abilities>
+			</li>
+		</comps>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<MoveSpeed>0.4</MoveSpeed>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1.0</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</texPath>
+		</graphicData>
+		<!-- <thingClass>EmpireStraesaxSpecForces.Apparel_Teleporter</thingClass> -->
+		<apparel>
+			<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</wornGraphicPath>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+		</apparel>
+		<colorGenerator Inherit="False" IsNull="True"/>
+	</ThingDef>
+	<!-- Useless? -->
+	<ThingDef ParentName="MoteBase">
+		<defName>SF_TeleportFlash</defName>
+		<graphicData>
+			<texPath>Things/Mote/SparkThrown</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.03</fadeInTime>
+			<solidTime>0.04</solidTime>
+			<fadeOutTime>0.13</fadeOutTime>
+			<collide>true</collide>
+		</mote>
+	</ThingDef>
+	<EffecterDef>
+		<defName>SF_TeleportEffecter</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.02</positionRadius>
+				<fleckDef>ElectricalSpark</fleckDef>
+				<burstCount>4~5</burstCount>
+				<speed>3.3~5</speed>
+				<scale>3</scale>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<initialDelayTicks>20</initialDelayTicks>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<speed>1</speed>
+				<scale>0.3</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<fleckDef>PsycastAreaEffect</fleckDef>
+				<maxMoteCount>1</maxMoteCount>
+			</li>
+		</children>
+		<offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+		<positionRadius>0.1</positionRadius>
+	</EffecterDef>
+	<!-- Experimental -->
+	<VEF.Abilities.AbilityDef>
+		<defName>Ability_QuantumTeleport</defName>
+		<label>Quantum Jump</label>
+		<description>The "Quantum Jump" uses cutting edge technology known to few, even within the Straeax Empire, it uses the Rift Cutter Core to gain its ability to teleport, read blacksite file Nova.V82 for more info.</description>
+		<abilityClass>EmpireStraesaxSpecForces.QuantumTeleport</abilityClass>
+		<targetMode>Location</targetMode>
+		<iconPath>UI/Abilities/Skip</iconPath>
+		<castTime>60</castTime>
+		<range>60</range>
+		<cooldownTime>1200</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<keepCarryingThing>true</keepCarryingThing>
+		<castSound>PsychicShockLanceCast</castSound>
+		<modExtensions>
+			<li Class="EmpireStraesaxSpecForces.QuantumTeleportExtension">
+				<soundPreviousLocation>MechResurrect_Cast</soundPreviousLocation>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+</Defs>
