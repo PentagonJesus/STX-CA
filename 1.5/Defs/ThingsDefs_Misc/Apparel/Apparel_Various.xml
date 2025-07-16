@@ -3,13 +3,13 @@
 <Defs>
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_ScoutArmor</defName>
-		<label>2nd Divison Scout Armor</label>
-		<description>Well known for its read visor that stares down its enemies. The scout armor is worn by Imperial scouts usually sent on recon missions.  Contrary to their name they can come heavily armed and can take front-line roles in many scenarios.</description>
+		<label>Veltrion Pathfinder armor</label>
+		<description>(Placeholder) The Veltrion Pathfinder armor, based on the unpublished "Scout Frame", is a lightweight armor built for agility.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>ReconArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -48,38 +48,41 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>460</MaxHitPoints>
 			<Mass>9</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.47</ArmorRating_Heat>
-			<Insulation_Cold>35</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
+			<MoveSpeed>0.8</MoveSpeed>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
 			<AimingDelayFactor>-0.20</AimingDelayFactor>
 		</equippedStatOffsets>
 		<costList>
-			<Plasteel>95</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-			<DevilstrandCloth>20</DevilstrandCloth>
-			<Uranium>10</Uranium>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<DevilstrandCloth>14</DevilstrandCloth>
+			<Uranium>6</Uranium>
 		</costList>
 	</ThingDef>
 	<!-- Armor 2 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_VanguardArmor</defName>
-		<label>245th Divison Vanguard Armor</label>
-		<description>This armor is the standard-issue infantry uniform. It provides decent protection compared to other armors on front-line offense Attact</description>
+		<label>Alkeon Breacher Armor</label>
+		<description>(Placeholder) The Alkeon Breacher, designed for frontline combat and intense CQB firefights.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -119,37 +122,40 @@
 		</apparel>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
-			<MaxHitPoints>450</MaxHitPoints>
+			<MaxHitPoints>520</MaxHitPoints>
 			<Mass>10</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.10</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>35</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>14</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<AimingDelayFactor>-0.20</AimingDelayFactor>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
 			<PainShockThreshold>0.2</PainShockThreshold>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentSpacer>5</ComponentSpacer>
-			<Plasteel>120</Plasteel>
-			<Uranium>20</Uranium>
-			<DevilstrandCloth>20</DevilstrandCloth>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>100</Plasteel>
+			<Uranium>12</Uranium>
+			<VoltheriumHexTubes>4</VoltheriumHexTubes>
+			<DevilstrandCloth>14</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!-- Armor 3 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_RearguardArmor</defName>
-		<label>50th Divison Rearguard Armor</label>
-		<description>This armor is only worn by the most skilled and loyal soldiers. Meant to be the last line of defense against an attack on the empire’s capital city this armor is one of the most protective the empire has.  It will protect the wearer against all but the most powerful projectiles.  This armor also bears the eagle of courage directly on the front of the helmet for all to see.</description>
+		<label>Eidolon Bastion Armor</label>
+		<description>(Placeholder) The Eidolon Bastion armor is the most heavily armored suit in active deployment across Straeax military branches.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -189,38 +195,41 @@
 		</apparel>
 		<statBases>
 			<WorkToMake>75000</WorkToMake>
-			<MaxHitPoints>500</MaxHitPoints>
+			<MaxHitPoints>720</MaxHitPoints>
 			<Mass>18</Mass>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>36</Insulation_Cold>
-			<Insulation_Heat>12</Insulation_Heat>
+			<ArmorRating_Sharp>1.68</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.84</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.2</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>20</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.35</MoveSpeed>
-			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
 			<PainShockThreshold>0.3</PainShockThreshold>
 		</equippedStatOffsets>
 		<costList>
-			<ComponentSpacer>6</ComponentSpacer>
-			<Plasteel>200</Plasteel>
-			<Uranium>50</Uranium>
-			<DevilstrandCloth>30</DevilstrandCloth>
+			<ComponentSpacer>5</ComponentSpacer>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
+			<Plasteel>164</Plasteel>
+			<Uranium>42</Uranium>
+			<DevilstrandCloth>24</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!-- Armor 4 -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_SeekerdArmor</defName>
-		<label>48th Divison Seeker Armor</label>
-		<description>This armor is worn by the empire’s seekers and they are one of the most precise units there is.  They can hit almost any shot with their helmet’s built-in aim assist and can excel in hand-to-hand combat thanks to their light armor.</description>
+		<label>Xireth Precision Armor</label>
+		<description>(Placeholder) The Xireth-Seeker class-Precision armor is built for accuracy above all.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>ReconArmor</researchPrerequisite>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -260,23 +269,26 @@
 		</apparel>
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
-			<MaxHitPoints>350</MaxHitPoints>
+			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>25</Mass>
 			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>36</Insulation_Cold>
-			<Insulation_Heat>12</Insulation_Heat>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.4</MoveSpeed>
-			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.5</AimingDelayFactor>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>2</ComponentSpacer>
 			<Plasteel>80</Plasteel>
+			<VoltheriumHexTubes>4</VoltheriumHexTubes>
 			<Uranium>5</Uranium>
 			<DevilstrandCloth>10</DevilstrandCloth>
 		</costList>

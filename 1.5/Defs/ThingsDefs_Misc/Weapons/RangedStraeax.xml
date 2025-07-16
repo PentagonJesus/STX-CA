@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--Chazos L3-->
+	<!-- Chazos L3-->
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_ChazosLThree</defName>
-		<label>chazos L3</label>
-		<description>A common side-arm weapon issued to the soldiers of Straeaxian Empire.</description>
+		<label>Chazos L3 Pistol</label>
+		<description>The Chazos L3 is the standard issue sidearm for all Straeax Operatives, soldiers and peace-keeping forces. The Chazos L3 is a semi-automatic pistol featuring an integrated silencer and laser, fitted with an advanced sight picture system it is a well used and love sidearm.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChazosL3</texPath>
@@ -27,7 +27,6 @@
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<!--Make Straeax-->
 			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
@@ -38,11 +37,10 @@
 			<displayPriority>201</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Steel>25</Steel>
+			<Uranium>5</Uranium>
 			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<!--Perhaps a custom material used only by straeax, similar to eltex-->
+			<VoltheriumHexTubes>1</VoltheriumHexTubes>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
@@ -89,15 +87,15 @@
 		</tools>
 	</ThingDef>
 
-	<!--Skotadi-->
+	<!--Skelion Varnex-->
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>Gun_Skotadi</defName>
-		<label>Skotadi Rifle</label>
-		<description>A standard issue rifle used by the soldiers of Straeaxian Empire.</description>
+		<defName>Gun_SkelionVarnex</defName>
+		<label>Skelion Varnex Rifle</label>
+		<description>The Skelion Varnex a medium caliber full-auto rifle. The Varnex rifle is the full-auto sibling to the Avix, while being less accurate and not as effective at range as its sibling, it is an extremely effective rifle and excells in times when just hitting your shots doesn't matter and when fear is a much more powerful weapon.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Skotadi</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/SkelionVarnex</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
@@ -115,7 +113,6 @@
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<!--Make Straeax-->
 			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
@@ -126,11 +123,10 @@
 			<displayPriority>202</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Steel>25</Steel>
+			<Uranium>10</Uranium>
 			<Plasteel>75</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<!--Perhaps a custom material used only by straeax, similar to eltex-->
+			<ComponentSpacer>2</ComponentSpacer>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
@@ -178,13 +174,13 @@
 			</li>
 		</tools>
 	</ThingDef>
-
+	
 	<!--Corvus-->
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Corvus</defName>
 		<label>Corvus SMG</label>
-		<description>A standard issue SMG used by the soldiers of Straeaxian Empire.</description>
+		<description>The Corvus smg a light caliber smg platform loved by its users, said to be great for crowd control while still maintaining a usable level of accuracy. The Corvus smg is often deployed with troops in urban missions.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Corvus</texPath>
@@ -205,7 +201,6 @@
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<!--Make Straeax-->
 			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
@@ -216,11 +211,10 @@
 			<displayPriority>203</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Steel>25</Steel>
+			<Uranium>10</Uranium>
 			<Plasteel>50</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<!--Perhaps a custom material used only by straeax, similar to eltex-->
+			<ComponentSpacer>2</ComponentSpacer>
+			<VoltheriumHexTubes>2</VoltheriumHexTubes>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
@@ -274,7 +268,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Apokries</defName>
 		<label>Apokries Shotgun</label>
-		<description>A shotgun that fires molten slags to devastating effect, common sight among soldiers of Straeaxian Empire.</description>
+		<description>The Apokries Shotgun is a devastating close range weapon, while usable at long ranges its effectivenes drops exponentially, usually seen in the hands of either scouts or, more likely, breacher units fighting in close quarters combat.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Apokries</texPath>
@@ -295,7 +289,6 @@
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<!--Make Straeax-->
 			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
@@ -306,11 +299,10 @@
 			<displayPriority>204</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Steel>50</Steel>
+			<Uranium>15</Uranium>
 			<Plasteel>75</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<!--Perhaps a custom material used only by straeax, similar to eltex-->
+			<ComponentSpacer>2</ComponentSpacer>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
@@ -363,8 +355,8 @@
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Diatrypo</defName>
-		<label>diatrypo rail gun</label>
-		<description>Specially designed gun that shoots bolts at insane speeds by using magnetic coils</description>
+		<label>Diatrypo rail gun</label>
+		<description>A specialized weapons platform that uses thermal conducting magnetic coils to charge the aptly named "Vulcan Bolt" through its cyclers for devastating damage and assured power. Only seen in the arms of seeker-class marksman that score perfectly on all precision tests. Knowledge of this weapon is a closely kept secret, any leaks will be hunted down and executed swiftly, based on the widely known Ventral Lance Platform but shrunk for operative usage.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Diatrypo</texPath>
@@ -384,7 +376,7 @@
 			<WorkToMake>75000</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>StraeaxRailGun</researchPrerequisite>
+			<researchPrerequisite>AdvancedStraeax</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
@@ -394,9 +386,10 @@
 			<displayPriority>205</displayPriority>
 		</recipeMaker>
 		<costList>
+			<Uranium>20</Uranium>
 			<Plasteel>100</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
 		</costList>
 		<weaponTags>
 			<li>SpacerGun</li>
@@ -466,7 +459,7 @@
 		<defName>Bullet_Diatrypo</defName>
 		<label>Magnetized thermal bolt</label>
 		<graphicData>
-			<texPath>Things/Projectile/Projectile_MagnetizedThermalRounds</texPath>
+			<texPath>Things/Projectile/Projectile_VulcanBolts</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>1.5</drawSize>
