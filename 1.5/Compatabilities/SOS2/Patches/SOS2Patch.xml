@@ -1,119 +1,64 @@
-<patch>
-	<operation Class="PatchOperationFindMod">
+<Patch>
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Pirates</li>
 		</mods>
 			<match Class="PatchOperationSequence">
 				<operations>
 					<li Class="PatchOperationAdd">
-				            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision"]/apparel</xpath>
-					        <value>
-					        	<tags>
-					                	<li>EVA</li>
-					        	</tags>
-						</value>
-					</li>
-					<li Class="PatchOperationAdd">
-				            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionShoulders"]/apparel</xpath>
-					        <value>
-					        	<tags>
-					                	<li>EVA</li>
-					        	</tags>
-						</value>
-					</li>
-					<li Class="PatchOperationAdd">
-				            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionHelmet"]/apparel</xpath>
-					        <value>
-					        	<tags>
-					                	<li>EVA</li>
-					        	</tags>
+					    <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision" or defName="SF_CrusaderDivisionShoulders" or defName="SF_CrusaderDivisionHelmet"]/apparel/tags</xpath>
+						<value>
+					                <li>EVA</li>
 						</value>
 					</li>
 				</operations>
 			</match>
-	</operation>
-	<operation Class="PatchOperationSequence">
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoArmor" or defName="SF_UnerforschtCommandoHelmet"]/apparel/tags</xpath>
+						<value>
+							<li>EVA</li>
+						</value>
+					</li>
+
+				</operations>
+			</match>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoArmor"]/statBases/MaxHitPoints</xpath>
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor" or defName="Apparel_VanguardArmor" or defName="Apparel_RearguardArmor" or defName="Apparel_SeekerdArmor"]/apparel/tags</xpath>
 				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
+					<li>EVA</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/statBases/Mass</xpath>
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet" or defName="Apparel_VanguardHelmet" or defName="Apparel_RearguardHelmet" or defName="Apparel_SeekerHelmet"]/apparel/tags</xpath>
 				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
+					<li>EVA</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/statBases/MaxHitPoints</xpath>
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor" or defName="Apparel_VanguardArmor" or defName="Apparel_RearguardArmor" or defName="Apparel_SeekerdArmor"]/equippedStatOffsets</xpath>
 				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
+					<DecompressionResistance>.8</DecompressionResistance>
+					<VacuumSpeedMultiplier>2</VacuumSpeedMultiplier>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/Mass</xpath>
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet" or defName="Apparel_VanguardHelmet" or defName="Apparel_RearguardHelmet" or defName="Apparel_SeekerHelmet"]/equippedStatOffsets</xpath>
 				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
+					<DecompressionResistance>.25</DecompressionResistance>
+					<VacuumSpeedMultiplier>2</VacuumSpeedMultiplier>
+					<HypoxiaResistance>1</HypoxiaResistance>
 				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/statBases/MaxHitPoints</xpath>
-				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_PrivateUniform"]/statBases/Mass</xpath>
-				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/statBases/MaxHitPoints</xpath>
-				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/statBases/Mass</xpath>
-				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/MaxHitPoints</xpath>
-				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/statBases/Mass</xpath>
-				<value>
-					<tags>
-					        <li>EVA</li>
-					</tags>
-				</value>
-			</li>
+			</li>	
 		</operations>
-	</operation>
-</patch>
+	</Operation>
+</Patch>
