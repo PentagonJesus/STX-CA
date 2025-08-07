@@ -1,100 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-      <operations>
-        <!-- ========== Crusader Division Warcasket ========== -->
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision"]/apparel/tags</xpath>
-          <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision"]/apparel</xpath>
-            <value>
-              <tags>
-                <li>EVA</li>
-              </tags>
-            </value>
-          </nomatch>
-          <match Class="PatchOperationInsert">
-            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision"]/apparel/tags/li</xpath>
-            <value>
-              <li>EVA</li>
-            </value>
-          </match>
-        </li>
-        <!-- ========== Crusader Division Warcasket - Shoulders ========== -->
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionShoulders"]/apparel/tags</xpath>
-          <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionShoulders"]/apparel</xpath>
-            <value>
-              <tags>
-                <li>EVA</li>
-              </tags>
-            </value>
-          </nomatch>
-          <match Class="PatchOperationInsert">
-            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionShoulders"]/apparel/tags/li</xpath>
-            <value>
-              <li>EVA</li>
-            </value>
-          </match>
-        </li>
-        <!-- === Crusader Division Warcasket Helmet === -->
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionHelmet"]/apparel/tags</xpath>
-          <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionHelmet"]/apparel</xpath>
-            <value>
-              <tags>
-                <li>EVA</li>
-              </tags>
-            </value>
-          </nomatch>
-          <match Class="PatchOperationInsert">
-            <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionHelmet"]/apparel/tags/li</xpath>
-            <value>
-              <li>EVA</li>
-            </value>
-          </match>
-        </li>
-        <!-- === Unerforscht commando helmet === -->
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/apparel/tags</xpath>
-          <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/apparel</xpath>
-            <value>
-              <tags>
-                <li>EVA</li>
-              </tags>
-            </value>
-          </nomatch>
-          <match Class="PatchOperationInsert">
-            <xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/apparel/tags/li</xpath>
-            <value>
-              <li>EVA</li>
-            </value>
-          </match>
-        </li>
-        <!-- === Unerforscht commando armor === -->
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoArmor"]/apparel/tags</xpath>
-          <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoArmor"]/apparel</xpath>
-            <value>
-              <tags>
-                <li>EVA</li>
-              </tags>
-            </value>
-          </nomatch>
-          <match Class="PatchOperationInsert">
-            <xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoArmor"]/apparel/tags/li</xpath>
-            <value>
-              <li>EVA</li>
-            </value>
-          </match>
-        </li>
-        
-        
-      </operations>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+					    <xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision" or defName="SF_CrusaderDivisionShoulders" or defName="SF_CrusaderDivisionHelmet"]/apparel/tags</xpath>
+						<value>
+					                <li>EVA</li>
+						</value>
+					</li>
+				</operations>
+			</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoArmor" or defName="SF_UnerforschtCommandoHelmet"]/apparel/tags</xpath>
+						<value>
+							<li>EVA</li>
+						</value>
+					</li>
+
+				</operations>
+			</match>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor" or defName="Apparel_VanguardArmor" or defName="Apparel_RearguardArmor" or defName="Apparel_SeekerdArmor"]/apparel/tags</xpath>
+				<value>
+					<li>EVA</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet" or defName="Apparel_VanguardHelmet" or defName="Apparel_RearguardHelmet" or defName="Apparel_SeekerHelmet"]/apparel/tags</xpath>
+				<value>
+					<li>EVA</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutArmor" or defName="Apparel_VanguardArmor" or defName="Apparel_RearguardArmor" or defName="Apparel_SeekerdArmor"]/equippedStatOffsets</xpath>
+				<value>
+					<DecompressionResistance>.8</DecompressionResistance>
+					<VacuumSpeedMultiplier>2</VacuumSpeedMultiplier>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet" or defName="Apparel_VanguardHelmet" or defName="Apparel_RearguardHelmet" or defName="Apparel_SeekerHelmet"]/equippedStatOffsets</xpath>
+				<value>
+					<DecompressionResistance>.25</DecompressionResistance>
+					<VacuumSpeedMultiplier>2</VacuumSpeedMultiplier>
+					<HypoxiaResistance>1</HypoxiaResistance>
+				</value>
+			</li>	
+		</operations>
 	</Operation>
 </Patch>
-
