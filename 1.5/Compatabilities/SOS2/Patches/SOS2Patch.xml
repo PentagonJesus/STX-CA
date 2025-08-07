@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Patch>
-	<Operation Class="PatchOperationFindMod">
+<patch>
+	<operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Pirates</li>
 		</mods>
@@ -33,9 +32,9 @@
 				</operations>
 			</match>
 	</operation>
-	<Operation Class="PatchOperationSequence">
+	<operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoArmor"]/statBases/MaxHitPoints</xpath>
 				<value>
 					<tags>
@@ -43,7 +42,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/statBases/Mass</xpath>
 				<value>
 					<tags>
@@ -51,7 +50,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_VanguardArmor"]/statBases/MaxHitPoints</xpath>
 				<value>
 					<tags>
@@ -59,7 +58,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_RearguardArmor"]/statBases/Mass</xpath>
 				<value>
 					<tags>
@@ -67,7 +66,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_SeekerdArmor"]/statBases/MaxHitPoints</xpath>
 				<value>
 					<tags>
@@ -75,7 +74,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_PrivateUniform"]/statBases/Mass</xpath>
 				<value>
 					<tags>
@@ -83,7 +82,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_ScoutHelmet"]/statBases/MaxHitPoints</xpath>
 				<value>
 					<tags>
@@ -91,7 +90,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_VanguardHelmet"]/statBases/Mass</xpath>
 				<value>
 					<tags>
@@ -99,7 +98,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_RearguardHelmet"]/statBases/MaxHitPoints</xpath>
 				<value>
 					<tags>
@@ -107,7 +106,7 @@
 					</tags>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Apparel_SeekerHelmet"]/statBases/Mass</xpath>
 				<value>
 					<tags>
@@ -116,5 +115,5 @@
 				</value>
 			</li>
 		</operations>
-	/<Operation>
-</Patch>
+	</operation>
+</patch>
