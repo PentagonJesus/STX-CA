@@ -7,7 +7,7 @@
 		<shortDescription>A walking fortress only given to those that have dedicated their lives to the Empire. There is no return.</shortDescription>
 		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Warcasketlike/HiggsCasket</texPath>
+			<texPath>Things/Apparel/Warcasket/HiggsCasket</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>75</Mass>
@@ -42,7 +42,7 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Warcasketlike/HiggsCasket</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Warcasket/HiggsCasket</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 				<li>Middle</li>
@@ -81,7 +81,7 @@
 		<shortDescription>A walking fortress only given to those that have dedicated their lives to the Empire. There is no return.</shortDescription>
 		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Warcasketlike/HiggsCasketShoulder</texPath>
+			<texPath>Things/Apparel/Warcasket/HiggsCasketShoulder</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>35</Mass>
@@ -114,7 +114,7 @@
 				<li>Hands</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Warcasketlike/HiggsCasketShoulder</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Warcasket/HiggsCasketShoulder</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 				<li>Middle</li>
@@ -133,7 +133,7 @@
 		<shortDescription>A walking fortress only given to those that have dedicated their lives to the Empire. There is no return.</shortDescription>
 		<description>The Netherion Shell is a death sentence. Pilots selected for the Netherion Shell undergo a full armor implantation, an almost permanant fusion of body and suit. Deployment of the Netherion Shell is absolute, no mercy shown, no quarter given. It is the final signal of the end.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Warcasketlike/HiggsWarcasketHelmet</texPath>
+			<texPath>Things/Apparel/Warcasket/HiggsWarcasketHelmet</texPath>
 		</graphicData>
 		<uiIconScale>1.25</uiIconScale>
 		<statBases>
@@ -164,7 +164,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Warcasketlike/HiggsWarcasketHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Warcasket/HiggsWarcasketHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>

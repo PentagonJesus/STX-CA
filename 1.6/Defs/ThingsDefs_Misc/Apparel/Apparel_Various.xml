@@ -21,11 +21,11 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<graphicData>
-			<texPath>Things/Apparel/FirstArmor_UI</texPath>
+			<texPath>Things/Apparel/ScoutArmor/FirstArmor_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/FirstArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/ScoutArmor/FirstArmor</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -95,11 +95,11 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<graphicData>
-			<texPath>Things/Apparel/SecondArmor_UI</texPath>
+			<texPath>Things/Apparel/VanguardArmor/SecondArmor_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/SecondArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/VanguardArmor/SecondArmor</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -169,11 +169,11 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<graphicData>
-			<texPath>Things/Apparel/ThirdArmor_UI</texPath>
+			<texPath>Things/Apparel/RearguardArmor/ThirdArmor_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/ThirdArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/RearguardArmor/ThirdArmor</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -244,11 +244,11 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<graphicData>
-			<texPath>Things/Apparel/FourthArmor_UI</texPath>
+			<texPath>Things/Apparel/SeekerArmor/FourthArmor_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/FourthArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/SeekerArmor/FourthArmor</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -307,7 +307,7 @@
 		<generateCommonality>0</generateCommonality>
 		<generateAllowChance>0</generateAllowChance>
 		<graphicData>
-			<texPath>Things/Apparel/UniformPrivate_UI</texPath>
+			<texPath>Things/Apparel/PrivateUniform/UniformPrivate_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -322,7 +322,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/UniformPrivate</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/PrivateUniform/UniformPrivate</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Neck</li>
 				<li>Torso</li>
@@ -368,7 +368,7 @@
 		<generateCommonality>0</generateCommonality>
 		<generateAllowChance>0</generateAllowChance>
 		<graphicData>
-			<texPath>Things/Apparel/Officer_UI</texPath>
+			<texPath>Things/Apparel/OfficerUniform/Officer_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -383,7 +383,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/Officer</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/OfficerUniform/Officer</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Neck</li>
 				<li>Torso</li>

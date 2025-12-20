@@ -41,10 +41,10 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<graphicData>
-			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
+			<texPath>Things/Apparel/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/UnerforschtCommando/UnerforschtCommandoHelmet</wornGraphicPath>
 			<tags>
 				<li>SpacerMilitary</li>
 			</tags>
@@ -102,11 +102,11 @@
 		</equippedStatOffsets>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</texPath>
+			<texPath>Things/Apparel/UnerforschtCommando/UnerforschtCommando</texPath>
 		</graphicData>
 		<!-- <thingClass>EmpireStraesaxSpecForces.Apparel_Teleporter</thingClass> -->
 		<apparel>
-			<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/UnerforschtCommando/UnerforschtCommando</wornGraphicPath>
 			<tags>
 				<li>SpacerMilitary</li>
 			</tags>
