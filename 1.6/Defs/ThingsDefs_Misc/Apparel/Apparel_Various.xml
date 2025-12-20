@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Armor 1 -->
 <Defs>
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_ScoutArmor</defName>
 		<label>Veltrion Pathfinder armor</label>
 		<description>(Placeholder) The Veltrion Pathfinder armor, based on the unpublished "Scout Frame", is a lightweight armor built for agility.</description>
@@ -75,7 +75,7 @@
 		</costList>
 	</ThingDef>
 	<!-- Armor 2 -->
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_VanguardArmor</defName>
 		<label>Alkeon Breacher Armor</label>
 		<description>(Placeholder) The Alkeon Breacher, designed for frontline combat and intense CQB firefights.</description>
@@ -149,7 +149,7 @@
 		</costList>
 	</ThingDef>
 	<!-- Armor 3 -->
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_RearguardArmor</defName>
 		<label>Eidolon Bastion Armor</label>
 		<description>(Placeholder) The Eidolon Bastion armor is the most heavily armored suit in active deployment across Straeax military branches.</description>
@@ -224,7 +224,7 @@
 		</costList>
 	</ThingDef>
 	<!-- Armor 4 -->
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_SeekerdArmor</defName>
 		<label>Xireth Precision Armor</label>
 		<description>(Placeholder) The Xireth-Seeker class-Precision armor is built for accuracy above all.</description>
@@ -424,3 +424,4 @@
 		</costList>
 	</ThingDef>
 </Defs>
+
