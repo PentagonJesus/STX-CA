@@ -6,7 +6,9 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+				
 				<!-- ========== Crusader Division Warcasket ========== -->
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivision"]/apparel/tags</xpath>
 					<nomatch Class="PatchOperationAdd">
@@ -24,7 +26,9 @@
 						</value>
 					</match>
 				</li>
+				
 				<!-- ========== Crusader Division Warcasket - Shoulders ========== -->
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionShoulders"]/apparel/tags</xpath>
 					<nomatch Class="PatchOperationAdd">
@@ -42,7 +46,9 @@
 						</value>
 					</match>
 				</li>
+				
 				<!-- === Crusader Division Warcasket Helmet === -->
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/VFEPirates.WarcasketDef[defName="SF_CrusaderDivisionHelmet"]/apparel/tags</xpath>
 					<nomatch Class="PatchOperationAdd">
@@ -69,7 +75,9 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+				
 				<!-- === Unerforscht commando helmet === -->
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoHelmet"]/apparel/tags</xpath>
 					<nomatch Class="PatchOperationAdd">
@@ -87,7 +95,9 @@
 						</value>
 					</match>
 				</li>
+				
 				<!-- === Unerforscht commando armor === -->
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/ThingDef[defName="SF_UnerforschtCommandoArmor"]/apparel/tags</xpath>
 					<nomatch Class="PatchOperationAdd">
