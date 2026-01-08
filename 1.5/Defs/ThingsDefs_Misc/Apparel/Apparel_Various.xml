@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- Armor 1 -->
 <Defs>
+	
+	<!-- Scout Armor -->
+	
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_ScoutArmor</defName>
 		<label>Veltrion Pathfinder armor</label>
@@ -73,7 +75,9 @@
 			<Uranium>6</Uranium>
 		</costList>
 	</ThingDef>
-	<!-- Armor 2 -->
+	
+	<!-- Vanguard Armor -->
+	
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_VanguardArmor</defName>
 		<label>Alkeon Breacher Armor</label>
@@ -146,7 +150,9 @@
 			<DevilstrandCloth>14</DevilstrandCloth>
 		</costList>
 	</ThingDef>
-	<!-- Armor 3 -->
+	
+	<!-- Rearguard Armor -->
+	
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_RearguardArmor</defName>
 		<label>Eidolon Bastion Armor</label>
@@ -220,7 +226,9 @@
 			<DevilstrandCloth>24</DevilstrandCloth>
 		</costList>
 	</ThingDef>
-	<!-- Armor 4 -->
+	
+	<!-- Seeker Armor -->
+	
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Apparel_SeekerdArmor</defName>
 		<label>Xireth Precision Armor</label>
@@ -293,7 +301,9 @@
 			<DevilstrandCloth>10</DevilstrandCloth>
 		</costList>
 	</ThingDef>
-	<!-- Uniform Private -->
+	
+	<!-- Private Uniform -->
+	
 	<ThingDef ParentName="ApparelMakeableBase">
 	    <defName>Apparel_PrivateUniform</defName>
 	    <label>Private Uniform</label>
@@ -355,6 +365,9 @@
 			<Steel>15</Steel>
 		</costList>
 	</ThingDef>
+
+	<!-- Officer Uniform -->	
+	
 	<ThingDef ParentName="ApparelMakeableBase">
 	    <defName>Apparel_OfficerUniform</defName>
 	    <label>Officer Uniform</label>
