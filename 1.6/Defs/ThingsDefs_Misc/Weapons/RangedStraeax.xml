@@ -173,7 +173,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef> -->
+	</ThingDef>
 
 	<!--Eidon Mk.7-->
 
@@ -259,7 +259,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef> -->
+	</ThingDef>
 
 	<!--Skelion Varnex-->
 	
@@ -435,7 +435,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef> -->
+	</ThingDef>
 
 	<!--Hekarion Vize-->
 
@@ -521,7 +521,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef> -->
+	</ThingDef>
 
 	<!--Helios Amplify-->
 
@@ -609,7 +609,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef> -->
+	</ThingDef>
 	
 	<!--Corvus-->
 	
