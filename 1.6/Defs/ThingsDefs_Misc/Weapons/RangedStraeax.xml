@@ -89,7 +89,7 @@
 
 	<!--Chazos L5-->
 
-<!--	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_ChazosLFive</defName>
 		<label>Chazos L5 Burst-Pistol</label>
 		<description>The Chazos L5 is a modified evolution of the L3 frame, adapted for short-range power delivery in high-intensity operations. Reengineered with a slimmer silhouette, the L5 sacrifices range and precision for increased damage output via a four round burst module.</description>
@@ -177,7 +177,7 @@
 
 	<!--Eidon Mk.7-->
 
-<!--	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Eidon</defName>
 		<label>Eidon Mk.7 Handcannon</label>
 		<description>The Eidon Mk.7 is a high-caliber thermal handcannon developed for deploymemt within the Straeax Empire’s elite close-quarter combat units.</description>
@@ -351,7 +351,7 @@
 
 	<!--Skelion Axiv-->
 
-<!--	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_SkelionAxiv</defName>
 		<label>Skelion Avix Burst-Rifle</label>
 		<description>The Skelion Axiv a medium caliber burst rifle. The Avix is far more accurate than its sibling the Varnex, used often in low cover engagements where hitting your shots matter far more than laying down fire. The Avix is the most widely used weapon in all Straeax military branches.</description>
@@ -439,7 +439,7 @@
 
 	<!--Hekarion Vize-->
 
-	<!--	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_HekarionVize</defName>
 		<label>Hekarion Vize DMR</label>
 		<description>The Hekarion Vize a medium caliber rifle meant for long range engagements, while still excelling at medium range ones. This weapon is often praised for its effectiveness in long-medium range engagements and versatility in usage on urban missions.</description>
@@ -525,7 +525,7 @@
 
 	<!--Helios Amplify-->
 
-<!--	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Helios</defName>
 		<label>Helios Amplify LMG</label>
 		<description>The Helios Amplify lmg platform a medium caliber lmg meant for unrelenting suppressive fire. The Helios is often deployed in squads that consist of at least one Bastion-class armor set for full effectiveness.</description>
@@ -789,7 +789,7 @@
 
 	<!-- Nexiron Arc.3-->
 
-<!--	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Nexiron</defName>
 		<label>Nexiron Arc.3 Precision Rifle</label>
 		<description>The Nexiron Arc.3 is a high caliber sniper rifle, while not as *REDACTED* as *REDACTED*, that is well known for its undeniable prowess in combat. Designed for long range engagements and being able to fire rounds in a quick manner, it remains one of the most picked weapons for Straeax marksman.</description>
