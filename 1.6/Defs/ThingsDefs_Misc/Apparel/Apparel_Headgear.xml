@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Headgear 1 -->
+	
+	<!-- Scout helmet -->
+	
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_ScoutHelmet</defName>
 		<label>Veltrion Pathfinder Helmet</label>
@@ -66,7 +68,9 @@
 			<Uranium>2</Uranium>
 		</costList>
 	</ThingDef>
-	<!-- Headgear 2 -->
+	
+	<!-- Vanguard Helmet -->
+	
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_VanguardHelmet</defName>
 		<label>Alkeon Breacher Helmet</label>
@@ -132,7 +136,9 @@
 			<Uranium>6</Uranium>
 		</costList>
 	</ThingDef>
-	<!-- Headgear 3 -->
+	
+	<!-- Rearguard Helmet -->
+	
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_RearguardHelmet</defName>
 		<label>Eidolon Bastion Helmet</label>
@@ -199,7 +205,9 @@
 			<Uranium>10</Uranium>
 		</costList>
 	</ThingDef>
-	<!-- Headgear 4 -->
+	
+	<!-- Seeker Helmet -->
+	
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_SeekerHelmet</defName>
 		<label>Xireth Precision Helmet</label>
@@ -265,7 +273,9 @@
 			<Uranium>5</Uranium>
 		</costList>
 	</ThingDef>
-	<!-- HatPrivate -->
+	
+	<!-- Private Hat -->
+	
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Apparel_EmpirePrivateHat</defName>
 		<label>Private Hat</label>
@@ -286,11 +296,11 @@
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Apparel/PrivateHat/HatPrivate_UI</texPath>
+			<texPath>Things/Apparel/PrivateHat/PrivateHat_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/PrivateHat/HatPrivate</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/PrivateHat/PrivateHat</wornGraphicPath>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -325,10 +335,12 @@
 			<Cloth>30</Cloth>
 		</costList>
 	</ThingDef>
+	
 	<!-- Officer Hat -->
+	
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Apparel_EmpireOfficerHat</defName>
-		<label>Office Hat</label>
+		<label>Officer Hat</label>
 		<description>Only the most high-ranking officers and officials can wear this symbol of honor.  Bears the eagle of courage for all to see and is highly decorated with medals.</description>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -346,11 +358,11 @@
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Apparel/OfficerHat/OfficeHat_UI</texPath>
+			<texPath>Things/Apparel/OfficerHat/OfficerHat_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/OfficerHat/OfficeHat</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/OfficerHat/OfficerHat</wornGraphicPath>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>

@@ -336,7 +336,7 @@
 	
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Apparel_EmpireOfficerHat</defName>
-		<label>Office Hat</label>
+		<label>Officer Hat</label>
 		<description>Only the most high-ranking officers and officials can wear this symbol of honor.  Bears the eagle of courage for all to see and is highly decorated with medals.</description>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
