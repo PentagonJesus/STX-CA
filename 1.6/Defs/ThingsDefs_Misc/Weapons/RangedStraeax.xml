@@ -352,7 +352,7 @@
 	<!--Skelion Axiv-->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>Gun_SkelionAxiv</defName>
+		<defName>Gun_SkelionAvix</defName>
 		<label>Skelion Avix Burst-Rifle</label>
 		<description>The Skelion Axiv a medium caliber burst rifle. The Avix is far more accurate than its sibling the Varnex, used often in low cover engagements where hitting your shots matter far more than laying down fire. The Avix is the most widely used weapon in all Straeax military branches.</description>
 		<techLevel>Spacer</techLevel>
