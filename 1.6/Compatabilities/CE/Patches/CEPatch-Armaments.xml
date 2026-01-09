@@ -63,9 +63,9 @@
 		<defName>Gun_ChazosLFive</defName>
 		<statBases>
 			<Mass>1.39</Mass>
-			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.25</SightsEfficiency>
-			<ShotSpread>0.1</ShotSpread>
+			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>0.9</SwayFactor>
 			<Bulk>1.5</Bulk>
 			<WorkToMake>50000</WorkToMake>
@@ -84,7 +84,7 @@
 			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>25</magazineSize>
+			<magazineSize>24</magazineSize>
 			<reloadTime>2</reloadTime>
 			<ammoSet>AmmoSet_LightThermalBolts</ammoSet>
 		</AmmoUser>
@@ -121,7 +121,7 @@
 		<defName>Gun_Eidon</defName>
 		<statBases>
 			<Mass>1.39</Mass>
-			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.25</SightsEfficiency>
 			<ShotSpread>0.1</ShotSpread>
 			<SwayFactor>0.9</SwayFactor>
@@ -133,7 +133,7 @@
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_HeavyThermalBolt</defaultProjectile>
-			<warmupTime>0.1</warmupTime>
+			<warmupTime>0.15</warmupTime>
 			<range>50</range>
 			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
@@ -200,7 +200,7 @@
 		</Properties>
 		<AmmoUser>
 			<magazineSize>30</magazineSize>
-			<reloadTime>3.4</reloadTime>
+			<reloadTime>3.2</reloadTime>
 			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
 		</AmmoUser>
 		<FireModes>
@@ -250,19 +250,19 @@
 			<defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
 			<warmupTime>0.75</warmupTime>
 			<range>58</range>
-			<burstShotCount>6</burstShotCount>
+			<burstShotCount>8</burstShotCount>
 			<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>30</magazineSize>
-			<reloadTime>3.4</reloadTime>
+			<magazineSize>40</magazineSize>
+			<reloadTime>3.6</reloadTime>
 			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
 		</AmmoUser>
 		<FireModes>
-			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
 			<aiUseBurstMode>TRUE</aiUseBurstMode>
 			<aiAimMode>AimedShot</aiAimMode>
 		</FireModes>
@@ -294,7 +294,7 @@
 		<defName>Gun_HekarionVize</defName>
 		<statBases>
 			<Mass>3</Mass>
-			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.4</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1</SwayFactor>
@@ -306,20 +306,18 @@
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
-			<warmupTime>0.75</warmupTime>
+			<warmupTime>0.55</warmupTime>
 			<range>72</range>
 			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>30</magazineSize>
-			<reloadTime>3.4</reloadTime>
+			<magazineSize>20</magazineSize>
+			<reloadTime>2.6</reloadTime>
 			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
 		</AmmoUser>
 		<FireModes>
-			<aimedBurstShotCount>3</aimedBurstShotCount>
-			<aiUseBurstMode>TRUE</aiUseBurstMode>
 			<aiAimMode>AimedShot</aiAimMode>
 		</FireModes>
 		<weaponTags>
@@ -345,7 +343,7 @@
 	</Operation>
 	
 	<!--Helios Amplify-->
-	
+	<!--
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_Helios</defName>
 		<statBases>
@@ -398,7 +396,7 @@
 		<value>
 			<AimingAccuracy>0.1</AimingAccuracy>
 		</value>
-	</Operation>
+	</Operation> -->
 	
 	<!--Corvus-->
 	
@@ -519,7 +517,7 @@
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_Nexiron</defName>
 		<statBases>
-			<RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.5</SightsEfficiency>
 			<ShotSpread>0.38</ShotSpread>
 			<SwayFactor>3</SwayFactor>

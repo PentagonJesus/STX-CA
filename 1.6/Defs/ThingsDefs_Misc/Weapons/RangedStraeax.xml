@@ -92,7 +92,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_ChazosLFive</defName>
 		<label>Chazos L5 Burst-Pistol</label>
-		<description>The Chazos L5 is a modified evolution of the L3 frame, adapted for short-range power delivery in high-intensity operations. Reengineered with a slimmer silhouette, the L5 sacrifices range and precision for increased damage output via a four round burst module.</description>
+		<description>The Chazos L5 is a modified evolution of the L3 frame, adapted for short-range power delivery in high-intensity operations. Developed with a longer barrel .</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChazosL3</texPath>
@@ -106,7 +106,7 @@
 			<AccuracyShort>0.58</AccuracyShort>
 			<AccuracyMedium>0.48</AccuracyMedium>
 			<AccuracyLong>0.32</AccuracyLong>
-			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
@@ -180,7 +180,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Eidon</defName>
 		<label>Eidon Mk.7 Handcannon</label>
-		<description>The Eidon Mk.7 is a high-caliber thermal handcannon developed for deploymemt within the Straeax Empire’s elite close-quarter combat units.</description>
+		<description>The Eidon Mk.7 is a high-caliber thermal handcannon developed for usage by high ranked military officials.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChazosL3</texPath>
@@ -349,15 +349,15 @@
 		</tools>
 	</ThingDef>
 
-	<!--Skelion Axiv-->
+	<!--Skelion Avix-->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_SkelionAvix</defName>
 		<label>Skelion Avix Burst-Rifle</label>
-		<description>The Skelion Axiv a medium caliber burst rifle. The Avix is far more accurate than its sibling the Varnex, used often in low cover engagements where hitting your shots matter far more than laying down fire. The Avix is the most widely used weapon in all Straeax military branches.</description>
+		<description>The Skelion Avix a medium caliber burst rifle, it is far more accurate than its sibling the Varnex. Often used in low cover engagements where hitting your shots matter far more than laying down fire. The Avix is the most widely used weapon in all Straeax military branches.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/SkelionAxiv</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/SkelionAvix</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
@@ -442,7 +442,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_HekarionVize</defName>
 		<label>Hekarion Vize DMR</label>
-		<description>The Hekarion Vize a medium caliber rifle meant for long range engagements, while still excelling at medium range ones. This weapon is often praised for its effectiveness in long-medium range engagements and versatility in usage on urban missions.</description>
+		<description>The Hekarion Vize a medium caliber rifle meant for long range engagements, while still excelling at medium range. This weapon was widely used on urban missions in combination with the "Precision" class Armor.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Hekarion</texPath>
@@ -456,7 +456,7 @@
 			<AccuracyShort>0.38</AccuracyShort>
 			<AccuracyMedium>0.66</AccuracyMedium>
 			<AccuracyLong>0.76</AccuracyLong>
-			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.45</ShootingAccuracyPawn>
@@ -524,7 +524,7 @@
 	</ThingDef>
 
 	<!--Helios Amplify-->
-
+	<!--
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Helios</defName>
 		<label>Helios Amplify LMG</label>
@@ -609,7 +609,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef>
+	</ThingDef>-->
 	
 	<!--Corvus-->
 	
@@ -704,7 +704,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Apokries</defName>
 		<label>Apokries Shotgun</label>
-		<description>The Apokries Shotgun is a devastating close range weapon, while usable at long ranges its effectivenes drops exponentially, usually seen in the hands of either scouts or, more likely, breacher units fighting in close quarters combat.</description>
+		<description>The Apokries Shotgun is a devastating close range weapon, while usable at long ranges its effectivenes drops exponentially, usually seen in the hands of either pathfinders or, more likely, breacher units fighting in close quarters combat.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Apokries</texPath>
@@ -792,7 +792,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Nexiron</defName>
 		<label>Nexiron Arc.3 Precision Rifle</label>
-		<description>The Nexiron Arc.3 is a high caliber sniper rifle, while not as *REDACTED* as *REDACTED*, that is well known for its undeniable prowess in combat. Designed for long range engagements and being able to fire rounds in a quick manner, it remains one of the most picked weapons for Straeax marksman.</description>
+		<description>The Nexiron Arc.3 is a high caliber sniper rifle that is well known for its undeniable prowess in combat. Designed for long range operations, the Nexiron is any Precision operatives first choice.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Nexiron</texPath>
@@ -866,7 +866,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Diatrypo</defName>
 		<label>Diatrypo rail gun</label>
-		<description>A specialized weapons platform that uses thermal conducting magnetic coils to charge the aptly named "Vulcan Bolt" through its cyclers for devastating damage and assured power. Only seen in the arms of seeker-class marksman that score perfectly on all precision tests. Knowledge of this weapon is a closely kept secret, any leaks will be hunted down and executed swiftly, based on the widely known Ventral Lance Platform but shrunk for operative usage.</description>
+		<description>A specialized weapons platform that uses thermal conducting magnetic coils to charge the aptly named "Vulcan Bolt" through its cyclers for devastating damage and assured power. Knowledge of this weapon is a closely kept secret, any leaks will be hunted down and executed swiftly, based on the widely known Ventral Lance Platform but shrunk for operative usage.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Diatrypo</texPath>
