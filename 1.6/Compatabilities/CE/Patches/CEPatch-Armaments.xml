@@ -314,7 +314,7 @@
 		</Properties>
 		<AmmoUser>
 			<magazineSize>20</magazineSize>
-			<reloadTime>2.6</reloadTime>
+			<reloadTime>2.4</reloadTime>
 			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
 		</AmmoUser>
 		<FireModes>
