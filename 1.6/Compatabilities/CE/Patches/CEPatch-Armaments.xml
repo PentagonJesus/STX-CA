@@ -178,7 +178,7 @@
 		<defName>Gun_SkelionAvix</defName>
 		<statBases>
 			<Mass>3</Mass>
-			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.4</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1</SwayFactor>
@@ -236,7 +236,7 @@
 		<defName>Gun_SkelionVarnex</defName>
 		<statBases>
 			<Mass>3</Mass>
-			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.4</SightsEfficiency>
 			<ShotSpread>0.09</ShotSpread>
 			<SwayFactor>1.1</SwayFactor>
@@ -295,7 +295,7 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
-			<SightsEfficiency>1.4</SightsEfficiency>
+			<SightsEfficiency>1.6</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1</SwayFactor>
 			<Bulk>9.5</Bulk>
