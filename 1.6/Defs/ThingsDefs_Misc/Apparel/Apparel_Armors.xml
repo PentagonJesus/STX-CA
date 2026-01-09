@@ -5,7 +5,13 @@
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_ScoutArmor</defName>
 		<label>Veltrion Pathfinder armor</label>
-		<description>(Placeholder) The Veltrion Pathfinder armor, based on the unpublished "Scout Frame", is a lightweight armor built for agility.</description>
+		<description>
+			The Veltrion (VEL-TREE-ON) Stride power armor, made for pathfinder class units, is the backbone of the Straeax military reconnaissance force well known for its usage in hands on scouting operations
+
+
+
+			“Fast, durable, capable under small arms fire and fast enough to dodge large arms fire. This pathfinder frame is far better than its previous generation sibling the “Scout Frame”. What you are seeing is a suit made from a necessity to outperform the growing boldness of the terrorists that seek to defy our Empress. It excels at pinpointing rebel bases and executing swift small-scale operations.” -Head Weapons research Specialist “Algoric Tieffta” as he was presenting the design to the Development Cell
+		</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -81,7 +87,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_ScoutHelmet</defName>
 		<label>Veltrion Pathfinder Helmet</label>
-		<description>(Placeholder) The Veltrion Pathfinder Helmet is a lightweight helmet meant for use the the Veltrion Pathfinder armor.</description>
+		<description>The Veltrion (VEL-TREE-ON) Pathfinder Helmet is a lightweight helmet meant for use with the Veltrion Pathfinder armor.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -149,7 +155,13 @@
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_VanguardArmor</defName>
 		<label>Alkeon Breacher Armor</label>
-		<description>(Placeholder) The Alkeon Breacher, designed for frontline combat and intense CQB firefights.</description>
+		<description>
+			The Alkeon (ALK-EE-ON) Breacher power frame, meant for use by Breacher class assault units, is used in the majority of the Empire’s military forces. Well known for its usage in urban sectors and being used as a breaching force, hence the name.
+
+
+
+			“Our frontline has been in need of an upgrade for a while now, I mean we’re still using an armor developed during the Expansion period over three hundred years ago. Now is that armor advanced? Yes, it is... but it’s not good enough. So, I propose the Alkeon Breacher, purpose built for the frontlines, it’s faster, its far stronger and it was the Empress herself that approved to my continued development of this armor. With this armor the Empire’s frontline soldiers will have no problems hunting down the insurrectionists.” -Systems Development specialist “Athie Halix” as she presents an authorized armor frame.
+		</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -225,7 +237,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_VanguardHelmet</defName>
 		<label>Alkeon Breacher Helmet</label>
-		<description>(Placeholder) The Alkeon Breacher Helmet designed for use with the Alkeon Breacher Armor.</description>
+		<description>The Alkeon Breacher Helmet designed for use with the Alkeon Breacher Armor.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
