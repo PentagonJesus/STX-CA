@@ -1,0 +1,580 @@
+<Defs>
+
+	<!-- Scout Armor -->
+
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>Apparel_ScoutArmor</defName>
+		<label>Veltrion Pathfinder armor</label>
+		<description>(Placeholder) The Veltrion Pathfinder armor, based on the unpublished "Scout Frame", is a lightweight armor built for agility.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit='False'>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/ScoutArmor/FirstArmor_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/ScoutArmor/FirstArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>460</MaxHitPoints>
+			<Mass>9</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<MoveSpeed>0.8</MoveSpeed>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.20</AimingDelayFactor>
+		</equippedStatOffsets>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<DevilstrandCloth>14</DevilstrandCloth>
+			<Uranium>6</Uranium>
+		</costList>
+	</ThingDef>
+
+	<!-- Scout helmet -->
+
+	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+		<defName>Apparel_ScoutHelmet</defName>
+		<label>Veltrion Pathfinder Helmet</label>
+		<description>(Placeholder) The Veltrion Pathfinder Helmet is a lightweight helmet meant for use the the Veltrion Pathfinder armor.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit='False'>
+			<li>Headgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/ScoutHelmet/FirstHelmet_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/ScoutHelmet/FirstHelmet</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpaceMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Mass>2.5</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<VoltheriumHexTubes>2</VoltheriumHexTubes>
+			<ComponentSpacer>1</ComponentSpacer>
+			<DevilstrandCloth>6</DevilstrandCloth>
+			<Uranium>2</Uranium>
+		</costList>
+	</ThingDef>
+
+	<!-- Vanguard Armor -->
+
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>Apparel_VanguardArmor</defName>
+		<label>Alkeon Breacher Armor</label>
+		<description>(Placeholder) The Alkeon Breacher, designed for frontline combat and intense CQB firefights.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit='False'>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/VanguardArmor/SecondArmor_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/VanguardArmor/SecondArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>520</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
+			<PainShockThreshold>0.2</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>100</Plasteel>
+			<Uranium>12</Uranium>
+			<VoltheriumHexTubes>4</VoltheriumHexTubes>
+			<DevilstrandCloth>14</DevilstrandCloth>
+		</costList>
+	</ThingDef>
+
+	<!-- Vanguard Helmet -->
+
+	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+		<defName>Apparel_VanguardHelmet</defName>
+		<label>Alkeon Breacher Helmet</label>
+		<description>(Placeholder) The Alkeon Breacher Helmet designed for use with the Alkeon Breacher Armor.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit='False'>
+			<li>Headgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/VanguardHelmet/SecondHelmet_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/VanguardHelmet/SecondHelmet</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>320</MaxHitPoints>
+			<Mass>2.8</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>30</Plasteel>
+			<DevilstrandCloth>8</DevilstrandCloth>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<Uranium>6</Uranium>
+		</costList>
+	</ThingDef>
+
+	<!-- Rearguard Armor -->
+
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>Apparel_RearguardArmor</defName>
+		<label>Eidolon Bastion Armor</label>
+		<description>(Placeholder) The Eidolon Bastion armor is the most heavily armored suit in active deployment across Straeax military branches.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit='False'>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/RearguardArmor/ThirdArmor_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/RearguardArmor/ThirdArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<MaxHitPoints>720</MaxHitPoints>
+			<Mass>18</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.68</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.84</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.2</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
+			<EquipDelay>20</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<MoveSpeed>-0.35</MoveSpeed>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+			<PainShockThreshold>0.3</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<VoltheriumHexTubes>5</VoltheriumHexTubes>
+			<Plasteel>164</Plasteel>
+			<Uranium>42</Uranium>
+			<DevilstrandCloth>24</DevilstrandCloth>
+		</costList>
+	</ThingDef>
+
+	<!-- Rearguard Helmet -->
+
+	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+		<defName>Apparel_RearguardHelmet</defName>
+		<label>Eidolon Bastion Helmet</label>
+		<description>(Placeholder) The Eidolon Bastion helmet is the most heavily armored helmet in active deployment across Straeax military branches.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/RearguardHelmet/ThirdHelmet_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/RearguardHelmet/ThirdHelmet</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+		<statBases>
+			<WorkToMake>28460</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.74</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.2</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<PsychicSensitivity>-0.2</PsychicSensitivity>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>40</Plasteel>
+			<VoltheriumHexTubes>4</VoltheriumHexTubes>
+			<DevilstrandCloth>10</DevilstrandCloth>
+			<Uranium>10</Uranium>
+		</costList>
+	</ThingDef>
+
+	<!-- Seeker Armor -->
+
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>Apparel_SeekerdArmor</defName>
+		<label>Xireth Precision Armor</label>
+		<description>(Placeholder) The Xireth-Seeker class-Precision armor is built for accuracy above all.</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit='False'>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/SeekerArmor/FourthArmor_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/SeekerArmor/FourthArmor</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>25</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>42</Insulation_Cold>
+			<Insulation_Heat>28</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<MoveSpeed>0.4</MoveSpeed>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicResistance>0.75</ToxicResistance>
+			<AimingDelayFactor>-0.5</AimingDelayFactor>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>80</Plasteel>
+			<VoltheriumHexTubes>4</VoltheriumHexTubes>
+			<Uranium>5</Uranium>
+			<DevilstrandCloth>10</DevilstrandCloth>
+		</costList>
+	</ThingDef>
+
+	<!-- Seeker Helmet -->
+
+	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+		<defName>Apparel_SeekerHelmet</defName>
+		<label>Xireth Precision Helmet</label>
+		<description>(Placeholder) The Xireth-Seeker class-Precsion helmet is a highly advanced helmet with an enhanced visor that shows projectile trajectory and possible shot paths ..</description>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>StraeaxArmory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Apparel/SeekerHelmet/FourthHelmet_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/SeekerHelmet/FourthHelmet</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.86</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.72</ArmorRating_Heat>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
+			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>20</Plasteel>
+			<VoltheriumHexTubes>3</VoltheriumHexTubes>
+			<DevilstrandCloth>8</DevilstrandCloth>
+			<Uranium>5</Uranium>
+		</costList>
+	</ThingDef>
+</Defs>
