@@ -41,15 +41,6 @@
 			<li>AdvancedGun</li>
 		</weaponTags>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]/equippedStatOffsets</xpath>
 		<value>
@@ -99,15 +90,6 @@
 			<li>AdvancedGun</li>
 		</weaponTags>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_ChazosLFive"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_ChazosLFive"]/equippedStatOffsets</xpath>
 		<value>
@@ -155,15 +137,6 @@
 			<li>CE_OneHandedWeapon</li>
 			<li>AdvancedGun</li>
 		</weaponTags>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_Eidon"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Eidon"]/equippedStatOffsets</xpath>
