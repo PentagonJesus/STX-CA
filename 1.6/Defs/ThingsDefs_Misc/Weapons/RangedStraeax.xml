@@ -58,7 +58,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_ThermalBoltNonCE</defaultProjectile>
+				<defaultProjectile>Bullet_LightThermalBoltNonCE</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>26</range>
 				<soundCast>Shot_ChargeRifle</soundCast>
@@ -144,7 +144,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_ThermalBoltNonCE</defaultProjectile>
+				<defaultProjectile>Bullet_LightThermalBoltNonCE</defaultProjectile>
 				<warmupTime>0.25</warmupTime>
 				<range>24</range>
 				<burstShotCount>4</burstShotCount>
@@ -668,7 +668,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_ThermalBoltNonCE</defaultProjectile>
+				<defaultProjectile>Bullet_LightThermalBoltNonCE</defaultProjectile>
 				<warmupTime>0.75</warmupTime>
 				<range>36</range>
 				<burstShotCount>8</burstShotCount>
@@ -936,7 +936,21 @@
 	</ThingDef>
 	
 	<!--Strictly Vanilla-->
-	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LightThermalBoltNonCE</defName>
+		<label>light thermal bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_LightThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.44</armorPenetrationBase>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_ThermalBoltNonCE</defName>
 		<label>thermal bolt</label>
