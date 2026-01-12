@@ -63,7 +63,7 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<MoveSpeed>0.8</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -134,7 +134,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -209,7 +209,7 @@
 			<EquipDelay>14</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -280,7 +280,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -353,7 +353,7 @@
 			<EquipDelay>20</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<MoveSpeed>-0.35</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -425,7 +425,7 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<PsychicSensitivity>-0.2</PsychicSensitivity>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
@@ -499,7 +499,7 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<MoveSpeed>0.4</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -570,7 +570,7 @@
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
