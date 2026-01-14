@@ -35,7 +35,7 @@
 			<Uranium>10</Uranium>
 		</costList>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1.0</SlaveSuppressionOffset>
 			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
@@ -96,7 +96,7 @@
 			</li>
 		</comps>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<MoveSpeed>0.4</MoveSpeed>
 			<ToxicResistance>0.75</ToxicResistance>
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
