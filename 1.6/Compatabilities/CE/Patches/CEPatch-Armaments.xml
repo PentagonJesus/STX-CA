@@ -41,15 +41,6 @@
 			<li>AdvancedGun</li>
 		</weaponTags>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]/equippedStatOffsets</xpath>
 		<value>
@@ -99,15 +90,6 @@
 			<li>AdvancedGun</li>
 		</weaponTags>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_ChazosLFive"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_ChazosLFive"]/equippedStatOffsets</xpath>
 		<value>
@@ -155,15 +137,6 @@
 			<li>CE_OneHandedWeapon</li>
 			<li>AdvancedGun</li>
 		</weaponTags>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_Eidon"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Eidon"]/equippedStatOffsets</xpath>
@@ -648,10 +621,7 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>
-			Defs/ThingDef[defName="Gun_ChazosLThree" or
-			defname="Gun_ChazosLFive" or
-			defname="Gun_Eidon"
-			]/tools
+			Defs/ThingDef[defName="Gun_ChazosLThree" or defName="Gun_ChazosLFive" or defName="Gun_Eidon"]/tools
 		</xpath>
 		<value>
 			<tools>
@@ -684,13 +654,7 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>
-			Defs/ThingDef[defName="Gun_SkelionVarnex" or
-			defname="Gun_Corvus" or
-			defname="Gun_Apokries" or
-			defname="Gun_SkelionAvix" or
-			defname="Gun_Helios" or
-			defname="Gun_Hekarion"
-			]/tools
+			Defs/ThingDef[defName="Gun_SkelionVarnex" or defName="Gun_Corvus" or defName="Gun_Apokries" or defName="Gun_SkelionAvix" or defName="Gun_Helios" or defName="Gun_Hekarion"]/tools
 		</xpath>
 		<value>
 			<tools>

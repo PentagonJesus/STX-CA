@@ -21,7 +21,7 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<VEF_MassCarryCapacity>125</VEF_MassCarryCapacity>
 			<MoveSpeed>0.60</MoveSpeed>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -97,7 +97,7 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<VacuumResistance>0.8</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 			<MoveSpeed>0.60</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.0</SlaveSuppressionOffset>
 		</equippedStatOffsets>
@@ -155,6 +155,7 @@
 			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>  
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1000.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
 		</equippedStatOffsets>
 		<costList>
 			<Uranium>32</Uranium>
