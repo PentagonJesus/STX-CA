@@ -5,9 +5,9 @@
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_ScoutArmor</defName>
 		<label>Veltrion Pathfinder armor</label>
-		<description>The Veltrion (VEL-TREE-ON) Stride power armor, made for pathfinder class units, is the backbone of the Straeax military reconnaissance force well known for its usage in hands on scouting operations
+		<description>The Veltrion (VEL-TREE-ON) Stride speed frame, made for pathfinder class units, is the backbone of the Straeax military reconnaissance force well known for its usage in hands on scouting operations
 
-		“Fast, durable, capable under small arms fire and fast enough to dodge large arms fire. This pathfinder frame is far better than its previous generation sibling the “Scout Frame”. What you are seeing is a suit made from a necessity to outperform the growing boldness of the terrorists that seek to defy our Empress. It excels at pinpointing rebel bases and executing swift small-scale operations.” -Head Weapons research Specialist “Algoric Tieffta” as he was presenting the design to the Development Cell</description>
+		“Fast, durable, capable under small arms fire and fast enough to dodge large arms fire. This Pathfinder frame is far better than its previous generation sibling the “Scout Frame”. What you are seeing is a suit made from a necessity to outperform the growing boldness of the terrorists that seek to defy our Empress. It excels at pinpointing rebel bases and executing swift small-scale operations.” -Head Weapons research Specialist “Algoric Tieffta” as he was presenting the design to the Development Cell</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -64,7 +64,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<VacuumResistance>0.8</VacuumResistance>
-			<MoveSpeed>0.8</MoveSpeed>
+			<MoveSpeed>1.8</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
 			<AimingDelayFactor>-0.20</AimingDelayFactor>
@@ -83,7 +83,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_ScoutHelmet</defName>
 		<label>Veltrion Pathfinder Helmet</label>
-		<description>The Veltrion (VEL-TREE-ON) Pathfinder Helmet is a lightweight helmet meant for use with the Veltrion Pathfinder armor.</description>
+		<description>The Veltrion Pathfinder helmet is a lightweight helmet meant for use with the Veltrion Pathfinder speed frame.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -151,9 +151,9 @@
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_VanguardArmor</defName>
 		<label>Alkeon Breacher Armor</label>
-		<description>The Alkeon (ALK-EE-ON) Breacher power frame, meant for use by Breacher class assault units, is used in the majority of the Empire’s military forces. Well known for its usage in urban sectors and being used as a breaching force, hence the name.
+		<description>The Alkeon (AL-KEY-ON) Breacher power frame, meant for use by Breacher class assault units, is used in the majority of the Empire’s military forces. Well known for its usage in urban sectors and being used as a breaching force, hence the name.
 
-		“Our frontline has been in need of an upgrade for a while now, I mean we’re still using an armor developed during the Expansion period over three hundred years ago. Now is that armor advanced? Yes, it is... but it’s not good enough. So, I propose the Alkeon Breacher, purpose built for the frontlines, it’s faster, its far stronger and it was the Empress herself that approved to my continued development of this armor. With this armor the Empire’s frontline soldiers will have no problems hunting down the insurrectionists.” -Systems Development specialist “Athie Halix” as she presents an authorized armor frame.</description>
+		“Our frontline has been in need of an upgrade for a while now, I mean we’re still using an armor developed during the Expansion period over three hundred years ago. Now is that armor advanced? Yes, it is... but it’s not good enough. So, I propose the Alkeon Breacher, purpose built for the frontlines, it’s faster, its far stronger and it was the Empress herself that approved to my continued development of this frame. With this, the Empire’s frontline soldiers will have no problems hunting down the insurrectionists.” -Systems Development specialist “Athie Halix” as she presents an authorized power frame.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -210,6 +210,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<VacuumResistance>0.8</VacuumResistance>
+			<MoveSpeed>0.6</MoveSpeed>
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -229,7 +230,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_VanguardHelmet</defName>
 		<label>Alkeon Breacher Helmet</label>
-		<description>The Alkeon Breacher Helmet designed for use with the Alkeon Breacher Armor.</description>
+		<description>The Alkeon Breacher helmet designed for use with the Alkeon Breacher frame.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -297,7 +298,9 @@
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_RearguardArmor</defName>
 		<label>Eidolon Bastion Armor</label>
-		<description>(Placeholder) The Eidolon Bastion armor is the most heavily armored suit in active deployment across Straeax military branches.</description>
+		<description>The Eidolon (EYE-DUH-LAWN) Bastion power frame, used by all branches of the military usually for holding checkpoints/bases. The name would suggest that it itself is a bastion of defense, and it would be a proper assessment, as it is well known for its durability and thick plating.
+
+			“Okay I know my other... proposals haven't been all that up to standard, save the Pathfinder frame. However, I have full faith that the Empress herself has given me the vision for what I’m about to present. This... is the Eidolon Bastion Frame, meant for durability, able to take hits from some of the hottest thermal rounds. I KNOW for a fact that in terms of sheer unadulterated defense the only thing that outshines this is our Empress’s Royal guard.” - Head Weapons research Specialist “Algoric Tieffta” as he made his 23rd presentation trying to sell the Development cell on his ideas.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -374,7 +377,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_RearguardHelmet</defName>
 		<label>Eidolon Bastion Helmet</label>
-		<description>(Placeholder) The Eidolon Bastion helmet is the most heavily armored helmet in active deployment across Straeax military branches.</description>
+		<description>The Eidolon Bastion helmet designed for use with the Eidolon Bastion power frame.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -443,7 +446,9 @@
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>Apparel_SeekerdArmor</defName>
 		<label>Xireth Precision Armor</label>
-		<description>(Placeholder) The Xireth-Seeker class-Precision armor is built for accuracy above all.</description>
+		<description>The Xireth Seeker precision frame, used specifically by Seeker class units. (Unauthorized usage will result in death.)  A not so well-known frame that is specialized in long arms accuracy and highly efficient at taking down terrorist cells without being seen.
+
+			“The Xireth Precision frame is an innovative technological advancement for our marksmen. The main frame is built for ergonomic function, and the helmet has a built-in projectile auto-adjuster meaning you can physically see where to aim to get your preferred shot path. I’ve personally watched the live demonstration of the frame as it was used against a rebel stronghold. The ability to shoot at people behind cover, from the visor showing you where to fire, is brutal.” -Head Weapons research Specialist “Athie Halix” presenting a finished frame hours after her promotion.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -519,7 +524,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>Apparel_SeekerHelmet</defName>
 		<label>Xireth Precision Helmet</label>
-		<description>(Placeholder) The Xireth-Seeker class-Precsion helmet is a highly advanced helmet with an enhanced visor that shows projectile trajectory and possible shot paths ..</description>
+		<description>The Xireth precision helmet designed for use with the Xireth precision frame </description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>

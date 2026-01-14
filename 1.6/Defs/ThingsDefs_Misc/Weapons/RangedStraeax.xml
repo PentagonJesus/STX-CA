@@ -88,11 +88,11 @@
 	</ThingDef>
 
 	<!--Chazos L5-->
-
+	<!--
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_ChazosLFive</defName>
 		<label>Chazos L5 Burst-Pistol</label>
-		<description>The Chazos L5 is a modified evolution of the L3 frame, adapted for short-range power delivery in high-intensity operations. Developed with a longer barrel .</description>
+		<description>The Chazos L5 is a modified evolution of the L3 frame, adapted for short-range power delivery in high-intensity operations. Developed with a longer barrel and a retractible stock.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChazosL3</texPath>
@@ -173,7 +173,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!--Eidon Mk.7-->
 
@@ -183,7 +183,7 @@
 		<description>The Eidon Mk.7 is a high-caliber thermal handcannon developed for usage by high ranked military officials.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/ChazosL3</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Eidon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
