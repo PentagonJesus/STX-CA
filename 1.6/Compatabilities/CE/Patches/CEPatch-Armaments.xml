@@ -1,72 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-  <!--Chazos L3-->
+	<!--Chazos L3-->
 	
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_ChazosLThree</defName>
-    <statBases>
-      <Mass>1.39</Mass>
-      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.25</SightsEfficiency>
-      <ShotSpread>0.1</ShotSpread>
-      <SwayFactor>0.9</SwayFactor>
-      <Bulk>1.5</Bulk>
-      <WorkToMake>50000</WorkToMake>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.5</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
-      <warmupTime>0.1</warmupTime>
-      <range>24</range>
-      <soundCast>Shot_ChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>15</magazineSize>
-      <reloadTime>2</reloadTime>
-      <ammoSet>AmmoSet_LightThermalBolts</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aiUseBurstMode>FALSE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CE_Sidearm</li>
-      <li>CE_AI_BROOM</li>
-      <li>CE_OneHandedWeapon</li>
-      <li>AdvancedGun</li>
-    </weaponTags>
-  </Operation>
-
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]</xpath>
-    <value>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.00,1.00</DrawSize>
-        <DrawOffset>0.0,0.0</DrawOffset>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]/equippedStatOffsets</xpath>
-    <value>
-      <AimingAccuracy>0.1</AimingAccuracy>
-    </value>
-  </Operation>
-
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Gun_ChazosLThree</defName>
+		<statBases>
+			<Mass>1.39</Mass>
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.25</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>0.9</SwayFactor>
+			<Bulk>1.5</Bulk>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
+			<warmupTime>0.1</warmupTime>
+			<range>24</range>
+			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>15</magazineSize>
+			<reloadTime>2</reloadTime>
+			<ammoSet>AmmoSet_LightThermalBolts</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiUseBurstMode>FALSE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChazosLThree"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.1</AimingAccuracy>
+		</value>
+	</Operation>
+	
 	<!--Chazos L5-->
-
-<!--	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_ChazosLFive</defName>
 		<statBases>
 			<Mass>1.39</Mass>
-			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.25</SightsEfficiency>
-			<ShotSpread>0.1</ShotSpread>
+			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>0.9</SwayFactor>
 			<Bulk>1.5</Bulk>
 			<WorkToMake>50000</WorkToMake>
@@ -85,7 +75,7 @@
 			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>25</magazineSize>
+			<magazineSize>24</magazineSize>
 			<reloadTime>2</reloadTime>
 			<ammoSet>AmmoSet_LightThermalBolts</ammoSet>
 		</AmmoUser>
@@ -100,30 +90,20 @@
 			<li>AdvancedGun</li>
 		</weaponTags>
 	</Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_ChazosLFive"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_ChazosLFive"]/equippedStatOffsets</xpath>
 		<value>
 			<AimingAccuracy>0.1</AimingAccuracy>
 		</value>
-	</Operation> -->
-
+	</Operation>
+	
 	<!--Eidon Mk.7-->
-
-<!--	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_Eidon</defName>
 		<statBases>
 			<Mass>1.39</Mass>
-			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.25</SightsEfficiency>
 			<ShotSpread>0.1</ShotSpread>
 			<SwayFactor>0.9</SwayFactor>
@@ -135,7 +115,7 @@
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_HeavyThermalBolt</defaultProjectile>
-			<warmupTime>0.1</warmupTime>
+			<warmupTime>0.15</warmupTime>
 			<range>50</range>
 			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
@@ -158,88 +138,78 @@
 			<li>AdvancedGun</li>
 		</weaponTags>
 	</Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_Eidon"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.00,1.00</DrawSize>
-				<DrawOffset>0.0,0.0</DrawOffset>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Eidon"]/equippedStatOffsets</xpath>
 		<value>
 			<AimingAccuracy>0.1</AimingAccuracy>
 		</value>
-	</Operation> -->
+	</Operation>
 	
-  <!--Skelion Avix-->
-
-	<!--  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_SkelionAvix</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.4</SightsEfficiency>
-      <ShotSpread>0.08</ShotSpread>
-      <SwayFactor>1</SwayFactor>
-      <Bulk>9.5</Bulk>
-      <WorkToMake>50000</WorkToMake>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.5</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
-      <warmupTime>0.75</warmupTime>
-      <range>64</range>
-      <burstShotCount>3</burstShotCount>
-      <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-      <soundCast>Shot_ChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>30</magazineSize>
-      <reloadTime>3.4</reloadTime>
-      <ammoSet>AmmoSet_ThermalBolts</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aimedBurstShotCount>3</aimedBurstShotCount>
-      <aiUseBurstMode>TRUE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CE_AI_AR</li>
-      <li>AdvancedGun</li>
-    </weaponTags>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_SkelionAvix"]</xpath>
-    <value>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.40,1.40</DrawSize>
-        <DrawOffset>0.08,0.0</DrawOffset>
-        <CasingOffset>-0.05,0</CasingOffset>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Gun_SkelionAvix"]/equippedStatOffsets</xpath>
-    <value>
-      <AimingAccuracy>0.1</AimingAccuracy>
-    </value>
-  </Operation> -->
-
+	<!--Skelion Avix-->
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Gun_SkelionAvix</defName>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.4</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<Bulk>9.5</Bulk>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
+			<warmupTime>0.75</warmupTime>
+			<range>64</range>
+			<burstShotCount>3</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>3.2</reloadTime>
+			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_SkelionAvix"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.40,1.40</DrawSize>
+				<DrawOffset>0.08,0.0</DrawOffset>
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_SkelionAvix"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.1</AimingAccuracy>
+		</value>
+	</Operation>
+	
 	<!--Skelion Varnex-->
-
+	
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_SkelionVarnex</defName>
 		<statBases>
 			<Mass>3</Mass>
-			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.4</SightsEfficiency>
 			<ShotSpread>0.09</ShotSpread>
 			<SwayFactor>1.1</SwayFactor>
@@ -253,19 +223,19 @@
 			<defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
 			<warmupTime>0.75</warmupTime>
 			<range>58</range>
-			<burstShotCount>6</burstShotCount>
+			<burstShotCount>8</burstShotCount>
 			<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>30</magazineSize>
-			<reloadTime>3.4</reloadTime>
+			<magazineSize>40</magazineSize>
+			<reloadTime>3.6</reloadTime>
 			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
 		</AmmoUser>
 		<FireModes>
-			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
 			<aiUseBurstMode>TRUE</aiUseBurstMode>
 			<aiAimMode>AimedShot</aiAimMode>
 		</FireModes>
@@ -290,15 +260,15 @@
 			<AimingAccuracy>0.1</AimingAccuracy>
 		</value>
 	</Operation>
-
+	
 	<!--Hekarion Vize-->
-
-	<!--	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_HekarionVize</defName>
 		<statBases>
 			<Mass>3</Mass>
-			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
-			<SightsEfficiency>1.4</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.6</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1</SwayFactor>
 			<Bulk>9.5</Bulk>
@@ -309,20 +279,18 @@
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_ThermalBolt</defaultProjectile>
-			<warmupTime>0.75</warmupTime>
+			<warmupTime>0.55</warmupTime>
 			<range>72</range>
 			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>30</magazineSize>
-			<reloadTime>3.4</reloadTime>
+			<magazineSize>20</magazineSize>
+			<reloadTime>2.4</reloadTime>
 			<ammoSet>AmmoSet_ThermalBolts</ammoSet>
 		</AmmoUser>
 		<FireModes>
-			<aimedBurstShotCount>3</aimedBurstShotCount>
-			<aiUseBurstMode>TRUE</aiUseBurstMode>
 			<aiAimMode>AimedShot</aiAimMode>
 		</FireModes>
 		<weaponTags>
@@ -345,11 +313,11 @@
 		<value>
 			<AimingAccuracy>0.1</AimingAccuracy>
 		</value>
-	</Operation> -->
-
+	</Operation>
+	
 	<!--Helios Amplify-->
-
-<!--	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	<!--
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_Helios</defName>
 		<statBases>
 			<Mass>3</Mass>
@@ -402,127 +370,127 @@
 			<AimingAccuracy>0.1</AimingAccuracy>
 		</value>
 	</Operation> -->
-
+	
 	<!--Corvus-->
 	
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_Corvus</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <RangedWeapon_Cooldown>0.18</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.2</SightsEfficiency>
-      <ShotSpread>0.08</ShotSpread>
-      <SwayFactor>0.75</SwayFactor>
-      <Bulk>9.5</Bulk>
-      <WorkToMake>50000</WorkToMake>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.5</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
-      <warmupTime>0.45</warmupTime>
-      <range>36</range>
-      <burstShotCount>6</burstShotCount>
-      <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-      <soundCast>Shot_ChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>40</magazineSize>
-      <reloadTime>2.6</reloadTime>
-      <ammoSet>AmmoSet_LightThermalBolts</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aimedBurstShotCount>4</aimedBurstShotCount>
-      <aiUseBurstMode>TRUE</aiUseBurstMode>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CE_AI_SMG</li>
-      <li>AdvancedGun</li>
-    </weaponTags>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Corvus"]</xpath>
-    <value>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.0,1.0</DrawSize>
-        <DrawOffset>0.08,0.0</DrawOffset>
-        <CasingOffset>-0.05,0</CasingOffset>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Gun_Corvus"]/equippedStatOffsets</xpath>
-    <value>
-      <AimingAccuracy>0.05</AimingAccuracy>
-    </value>
-  </Operation>
-
-  <!--Apokries-->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Gun_Corvus</defName>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>0.18</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>0.75</SwayFactor>
+			<Bulk>9.5</Bulk>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_LightThermalBolt</defaultProjectile>
+			<warmupTime>0.45</warmupTime>
+			<range>36</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>40</magazineSize>
+			<reloadTime>2.6</reloadTime>
+			<ammoSet>AmmoSet_LightThermalBolts</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>4</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SMG</li>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Corvus"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.0,1.0</DrawSize>
+				<DrawOffset>0.08,0.0</DrawOffset>
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_Corvus"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.05</AimingAccuracy>
+		</value>
+	</Operation>
 	
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_Apokries</defName>
-    <statBases>
-      <Mass>3.50</Mass>
-      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
-      <ShotSpread>0.64</ShotSpread>
-      <SwayFactor>1.26</SwayFactor>
-      <Bulk>6.7</Bulk>
-      <SightsEfficiency>1.2</SightsEfficiency>
-      <WorkToMake>50000</WorkToMake>
-    </statBases>
-    <Properties>
-      <recoilAmount>2.5</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_SlagRound</defaultProjectile>
-      <warmupTime>0.25</warmupTime>
-      <range>46</range>
-      <soundCast>Shot_ChargeRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>8</magazineSize>
-      <reloadTime>0.8</reloadTime>
-      <ammoSet>AmmoSet_SlagRounds</ammoSet>
-      <reloadOneAtATime>True</reloadOneAtATime>
-    </AmmoUser>
-    <FireModes>
-      <aiAimMode>Snapshot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CE_AI_BROOM</li>
-      <li>AdvancedGun</li>
-    </weaponTags>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Apokries"]</xpath>
-    <value>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.30,1.44</DrawSize>
-        <DrawOffset>0.05,-0.05</DrawOffset>
-        <CasingOffset>0,0.2</CasingOffset>
-        <CasingAngleOffset>-30</CasingAngleOffset>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Gun_Apokries"]/equippedStatOffsets</xpath>
-    <value>
-      <AimingAccuracy>0.05</AimingAccuracy>
-    </value>
-  </Operation>
-
+	<!--Apokries-->
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Gun_Apokries</defName>
+		<statBases>
+			<Mass>3.50</Mass>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+			<ShotSpread>0.64</ShotSpread>
+			<SwayFactor>1.26</SwayFactor>
+			<Bulk>6.7</Bulk>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_SlagRound</defaultProjectile>
+			<warmupTime>0.25</warmupTime>
+			<range>46</range>
+			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>8</magazineSize>
+			<reloadTime>0.8</reloadTime>
+			<ammoSet>AmmoSet_SlagRounds</ammoSet>
+			<reloadOneAtATime>True</reloadOneAtATime>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Apokries"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.30,1.44</DrawSize>
+				<DrawOffset>0.05,-0.05</DrawOffset>
+				<CasingOffset>0,0.2</CasingOffset>
+				<CasingAngleOffset>-30</CasingAngleOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_Apokries"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.05</AimingAccuracy>
+		</value>
+	</Operation>
+	
 	<!-- Nexiron Arc.3 -->
-
-	<!--	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Gun_Nexiron</defName>
 		<statBases>
-			<RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.5</SightsEfficiency>
 			<ShotSpread>0.38</ShotSpread>
 			<SwayFactor>3</SwayFactor>
@@ -580,157 +548,148 @@
 				</li>
 			</tools>
 		</value>
-	</Operation> -->
-
-	<!-- Diatrypo -->
-
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>Gun_Diatrypo</defName>
-    <statBases>
-      <RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
-      <SightsEfficiency>2.5</SightsEfficiency>
-      <ShotSpread>0.38</ShotSpread>
-      <SwayFactor>3</SwayFactor>
-      <NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
-      <Bulk>13.00</Bulk>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.7</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_VulcanBolts</defaultProjectile>
-      <warmupTime>4.2</warmupTime>
-      <range>120</range>
-      <soundCast>ChargeLance_Fire</soundCast>
-      <soundCastTail>GunTail_Heavy</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>3</magazineSize>
-      <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_VulcanBolts</ammoSet>
-    </AmmoUser>
-    <FireModes>
-      <aiAimMode>AimedShot</aiAimMode>
-    </FireModes>
-    <weaponTags>
-      <li>CE_AI_SR</li>
-      <li>NOSWITCH</li>
-      <li>Bipod_DMR</li>
-    </weaponTags>
-  </Operation>
-<Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Diatrypo"]</xpath>
-    <value>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.6,1.6</DrawSize>
-        <DrawOffset>0.05,-0.05</DrawOffset>
-		 <CasingOffset>-0.05,0</CasingOffset>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="Gun_Diatrypo"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities>
-            <li>Blunt</li>
-          </capacities>
-          <power>10</power>
-          <cooldownTime>2.44</cooldownTime>
-          <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
-          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-        </li>
-      </tools>
-    </value>
-  </Operation>
+	</Operation>
 	
-  <!--Tools-->
-  
-  <!--Side arms-->
-  <Operation Class="PatchOperationReplace">
-    <xpath>
-      Defs/ThingDef[defName="Gun_ChazosLThree" or
-	  defname="Gun_ChazosLFive" or
-	  defname="Gun_Eidon"
-	  ]/tools
-    </xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>grip</label>
-          <capacities>
-            <li>Blunt</li>
-          </capacities>
-          <power>2</power>
-          <cooldownTime>1.54</cooldownTime>
-          <chanceFactor>1.5</chanceFactor>
-          <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-          <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>muzzle</label>
-          <capacities>
-            <li>Poke</li>
-          </capacities>
-          <power>2</power>
-          <cooldownTime>1.54</cooldownTime>
-          <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-        </li>
-      </tools>
-    </value>
-  </Operation>
-  
-  <!-- Long weapons-->
-
-  <Operation Class="PatchOperationReplace">
-    <xpath>
-      Defs/ThingDef[defName="Gun_SkelionVarnex" or
-      defname="Gun_Corvus" or
-      defname="Gun_Apokries" or
-	  defname="Gun_SkelionAvix" or 
-	  defname="Gun_Helios" or
-	  defname="Gun_Hekarion"
-      ]/tools
-    </xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities>
-            <li>Blunt</li>
-          </capacities>
-          <power>8</power>
-          <cooldownTime>1.55</cooldownTime>
-          <chanceFactor>1.5</chanceFactor>
-          <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-          <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities>
-            <li>Blunt</li>
-          </capacities>
-          <power>5</power>
-          <cooldownTime>2.02</cooldownTime>
-          <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>muzzle</label>
-          <capacities>
-            <li>Poke</li>
-          </capacities>
-          <power>8</power>
-          <cooldownTime>1.55</cooldownTime>
-          <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-        </li>
-      </tools>
-    </value>
-  </Operation>
+	<!-- Diatrypo -->
+	
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Gun_Diatrypo</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<ShotSpread>0.38</ShotSpread>
+			<SwayFactor>3</SwayFactor>
+			<NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
+			<Bulk>13.00</Bulk>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.7</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_VulcanBolts</defaultProjectile>
+			<warmupTime>4.2</warmupTime>
+			<range>120</range>
+			<soundCast>ChargeLance_Fire</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>3</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_VulcanBolts</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+			<li>NOSWITCH</li>
+			<li>Bipod_DMR</li>
+		</weaponTags>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Diatrypo"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.6,1.6</DrawSize>
+				<DrawOffset>0.05,-0.05</DrawOffset>
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Diatrypo"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>2.44</cooldownTime>
+					<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!--Tools-->
+	
+	<!--Side arms-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName="Gun_ChazosLThree" or defName="Gun_ChazosLFive" or defName="Gun_Eidon"]/tools
+		</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>grip</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>1.54</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>1.54</cooldownTime>
+					<armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!-- Long weapons-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName="Gun_SkelionVarnex" or defName="Gun_Corvus" or defName="Gun_Apokries" or defName="Gun_SkelionAvix" or defName="Gun_Helios" or defName="Gun_Hekarion"]/tools
+		</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
 </Patch>
-
