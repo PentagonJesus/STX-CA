@@ -51,7 +51,7 @@
 		</statOffsets>
 		<statFactors>
 			<MaxHitPoints>4.0</MaxHitPoints>
-			<Beauty>4</Beauty>
+			<Beauty>12</Beauty>
 			<Flammability>0</Flammability>
 			<WorkToMake>8</WorkToMake>
 			<WorkToBuild>8</WorkToBuild>
@@ -60,4 +60,5 @@
 	</stuffProps>
 	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 </ThingDef>
+
 </Defs>
