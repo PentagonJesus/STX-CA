@@ -8,7 +8,7 @@
 		<description>The Eidon Mk.7 is a high-caliber thermal handcannon developed for usage by high ranked military officials.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/ChazosL3</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Eidon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
