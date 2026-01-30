@@ -1,7 +1,5 @@
 <Defs>
-	
-	<!-- Naphtha -->
-	
+<!-- Naphtha -->
 	<ThingDef ParentName="VFEP_BaseWarcasketGun">
 		<defName>WarcasketGun_Naphtha</defName>
 		<label>Naphtha</label>

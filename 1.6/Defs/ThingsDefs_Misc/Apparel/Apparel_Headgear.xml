@@ -34,7 +34,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>SpaceMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -55,6 +55,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -99,7 +100,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>SpacerMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -120,6 +121,7 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -164,7 +166,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>SpacerMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -185,6 +187,7 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<PsychicSensitivity>-0.2</PsychicSensitivity>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
@@ -230,7 +233,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>SpacerMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -251,6 +254,7 @@
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
@@ -295,7 +299,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>SpacerMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -355,7 +359,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>SpacerMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
