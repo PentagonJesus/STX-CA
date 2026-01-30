@@ -1,0 +1,60 @@
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LightThermalBoltNonCE</defName>
+		<label>light thermal bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_LightThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.44</armorPenetrationBase>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ThermalBoltNonCE</defName>
+		<label>thermal bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_ThermalBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationBase>0.64</armorPenetrationBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SlagRoundNonCE</defName>
+		<label>Slag Round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_SlagRounds</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.64</armorPenetrationBase>
+			<speed>140</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Diatrypo</defName>
+		<label>Magnetized thermal bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_VulcanBolts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+</Defs>
