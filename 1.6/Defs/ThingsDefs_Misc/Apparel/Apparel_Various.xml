@@ -55,11 +55,12 @@
 			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.8</ArmorRating_Heat>
-			<Insulation_Cold>95</Insulation_Cold>
+			<Insulation_Cold>42</Insulation_Cold>
 			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<MoveSpeed>0.8</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -128,11 +129,12 @@
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
-			<Insulation_Cold>95</Insulation_Cold>
+			<Insulation_Cold>42</Insulation_Cold>
 			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>14</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -201,11 +203,12 @@
 			<ArmorRating_Sharp>1.68</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.84</ArmorRating_Blunt>
 			<ArmorRating_Heat>1.2</ArmorRating_Heat>
-			<Insulation_Cold>95</Insulation_Cold>
+			<Insulation_Cold>42</Insulation_Cold>
 			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>20</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<MoveSpeed>-0.35</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -275,11 +278,12 @@
 			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.8</ArmorRating_Heat>
-			<Insulation_Cold>95</Insulation_Cold>
+			<Insulation_Cold>42</Insulation_Cold>
 			<Insulation_Heat>28</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<VacuumResistance>0.8</VacuumResistance>
 			<MoveSpeed>0.4</MoveSpeed>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ToxicResistance>0.75</ToxicResistance>
@@ -420,4 +424,3 @@
 		</costList>
 	</ThingDef>
 </Defs>
-

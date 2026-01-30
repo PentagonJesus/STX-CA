@@ -2,7 +2,7 @@
 	<ThingDef ParentName="ApparelArmorHelmetPowerBase">
 		<defName>SF_UnerforschtCommandoHelmet</defName>
 		<label>Stygian Riftcutter Helmet</label>
-		<description>The Stygian Riftcutter helmet designed for use with the Stygian Riftcutter Frame.</description>
+		<description>(Placeholder) The Stygian Riftcutter is a close kept secret to the Straeax Empire, just like its sister the *REDACTED* in which uses the *REDACTED* system. The Styigan Riftcutter main use is decimation of forces with minimal resistance, its Rift Cutter Core allows for essentially teleporting through the quantum realm, read blacksite file Nova.V82 for more info.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -35,16 +35,16 @@
 			<Uranium>10</Uranium>
 		</costList>
 		<equippedStatOffsets>
-			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+			<VacuumResistance>0.8</VacuumResistance>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1.0</SlaveSuppressionOffset>
 			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<graphicData>
-			<texPath>Things/Apparel/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
+			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/UnerforschtCommando/UnerforschtCommandoHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommandoHelmet</wornGraphicPath>
 			<tags>
 				<li>SpacerMilitary</li>
 			</tags>
@@ -53,10 +53,8 @@
 	</ThingDef>
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>SF_UnerforschtCommandoArmor</defName>
-		<label>Stygian Riftcutter h</label>
-		<description>The Stygian Riftcutter, built for Necron-Black class Commando units, is an advanced experimental frame with a built-in temporal rift opener making it capable of removing the distances between two spaces and effectively teleporting that distance.
-
-			“So, you’re telling me the Empress wants me to make her some sort of physics defying suit? No no, I understand that it's a proven science, but its a proven science that jumbles living tissue. Yes, I understand the Empress’s will be done, nobody will hear of this you have my word.” – Head Weapons research Specialist “Athie Halix”</description>
+		<label>Stygian Riftcutter Armor</label>
+		<description>(Placeholder) The Stygian Riftcutter is a close kept secret to the Straeax Empire, just like its sister the *REDACTED* in which uses the *REDACTED* system. The Styigan Riftcutter main use is decimation of forces with minimal resistance, its Rift Cutter Core allows for essentially teleporting through the quantum realm, read blacksite file Nova.V82 for more info.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0</generateCommonality>
 		<recipeMaker>
@@ -96,7 +94,7 @@
 			</li>
 		</comps>
 		<equippedStatOffsets>
-			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+			<VacuumResistance>0.8</VacuumResistance>
 			<MoveSpeed>0.4</MoveSpeed>
 			<ToxicResistance>0.75</ToxicResistance>
 			<AimingDelayFactor>-0.15</AimingDelayFactor>
@@ -104,11 +102,11 @@
 		</equippedStatOffsets>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Apparel/UnerforschtCommando/UnerforschtCommando</texPath>
+			<texPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</texPath>
 		</graphicData>
 		<!-- <thingClass>EmpireStraesaxSpecForces.Apparel_Teleporter</thingClass> -->
 		<apparel>
-			<wornGraphicPath>Things/Apparel/UnerforschtCommando/UnerforschtCommando</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/UnerforschtCommando/UnerforschtCommando</wornGraphicPath>
 			<tags>
 				<li>SpacerMilitary</li>
 			</tags>
